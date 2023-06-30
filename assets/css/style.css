@@ -439,13 +439,14 @@ footer .icon a {
 -moz-box-shadow: 1px 1px 29px -2px rgba(0,0,0,0.58);
   }
   .back-drop {
-    position: absolute;
+    position: fixed;
     background: #00000056;
     background-size: 100% 100%;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
+    z-index: 1;
     transition: all 300ms;
   }
   .show-f li {
@@ -474,7 +475,6 @@ footer .icon a {
     }
     .clients {
       height: 21em;
-      width: 100vw;
     }
 }
 @media (max-width:488px) {
