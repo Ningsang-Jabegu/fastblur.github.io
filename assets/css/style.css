@@ -302,7 +302,7 @@ transition: all 1200ms;
 .clients {
   width: 100%;
   background: rgb(9, 9, 92);
-  height: 100vh;
+  height: 41em;
   background-image: url("/assets/images/background/homepage-4.png");
   background-size: 100% 100%;
   background-position: center;
@@ -491,24 +491,44 @@ footer .icon a {
         /* margin: 0.5em; */
         justify-content: space-between;
     }
-    .footer-img-1 {
-        height: 13em;
-        width: 100%;
+    .footer-left {
+      justify-content: center;
     }
-    .footer-img-1 .footer-img {
-        height: 100%;
-        width: 100%;
-      }
+    .footer-img-1 .footer-img ,
+      .footer-img-2 .footer-img,
+      .footer-img-2 .footer-img:nth-child(2) {
+        height: auto;
+          width: clamp(7em,1vw,13em);
+        }
       .clients {
         height: 12em;
-      }
-      .footer-img-2 .footer-img {
-        height: auto;
-        width: 100%;
       }
       .footer-org-detail {
         flex-direction: column;
         justify-content: center;
         align-items: normal;
       }
+}
+@media (max-width:348px){
+  #back-drop {
+    position: fixed;
+    z-index: 1;
+  }
+  nav {
+    flex-direction: column;
+    border-bottom: 2px solid salmon;
+    /* flex-wrap: wrap; */
+  }
+  .homepage-join h3 {
+    width: 100%;
+  }
+  .org-text-info {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: .5em;
+  }
+ section  .org-text h1 {
+    font-size: 17pt;
+    line-height: 1.3;
+  }
 }
