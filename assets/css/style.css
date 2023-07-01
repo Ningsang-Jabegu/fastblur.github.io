@@ -581,13 +581,33 @@ footer {
 footer .icon a {
   color: inherit;
 }
-
+@media (max-width:438px) {
+  section.org-info {
+    margin: 0;
+  }
+  .org-img {
+    display: flex;
+    justify-content: center;
+    min-height: 11em;
+  }
+  .org-img video {
+    min-width: 9em;
+  }
+  .r-work h1 {
+    font-size: 20pt!important;
+  }
+}
 @media (max-width:842px) {
   .footer-img-2 {
     display: flex;
     flex-wrap: wrap;
   }
-
+.footer-right h3 {
+  font-size: 25pt;
+}
+a.s-hello{
+  font-size: 15pt!important;
+}
   .footer-img-2 .footer-img:nth-child(1) {
     order: 2;
   }
@@ -717,12 +737,13 @@ footer .icon a {
 @media (max-width:348px) {
   #back-drop {
     position: fixed;
-    z-index: 2;
+    z-index: 0;
   }
 
   nav {
     flex-direction: column;
-    border-bottom: 2px solid salmon;
+    padding: .5em;
+    /* border-bottom: 2px solid salmon; */
     /* flex-wrap: wrap; */
   }
 
