@@ -342,7 +342,7 @@ section .org-text h1 span:nth-child(3) {
   background-color: transparent;
   border: none;
   font-size: 16pt;
-  background: #cacacae3;
+  background: #fffdfd;
   padding: 0 .3em;
   border-radius: 50%;
   cursor: pointer;
@@ -353,12 +353,12 @@ section .org-text h1 span:nth-child(3) {
 #open-video {
   position: relative;
   padding: 7em;
-  width: 90%;
+  /* width: 90%; */
   /* height: auto; */
 }
 #display-container .display-video iframe{
   height: 70vh;
-  width: 100%;/*64*/
+  width: 70vw;/*64*/
 }
 
 .homepage-join {
