@@ -189,10 +189,13 @@ section .org-text h1 span:nth-child(3) {
   font-weight: 500;
   line-height: 1.3;
 }
-
+.org-img {
+  border-radius: 0.9em;
+  overflow: hidden;
+}
 .org-img iframe {
-  height: 15em;
-  width: 25em;
+  height: 14em;
+  width: 24.9em;
   border-radius: 0.9em;
 }
 
