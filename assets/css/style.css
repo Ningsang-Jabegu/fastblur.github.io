@@ -1055,6 +1055,7 @@ h2.process-heading {
 }
 
 .testimonial-img {
+  min-height: 16em;
   max-height: 19em;
   max-width: 13em;
   min-width: 10em;
