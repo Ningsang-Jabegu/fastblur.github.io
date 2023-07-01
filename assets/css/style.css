@@ -1086,3 +1086,35 @@ div.rating {
 div.rating {
   color: #3E66DF;
 }
+/*About Us page style*/
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+  gap: 2em;
+}
+.aboutUs-main {
+  height: 50vh;
+  width: 100%;
+  background: #D9D9D9;
+}
+.aboutUs-text {
+  margin:  0 4em;
+  text-align: center;
+}
+.aboutUs-personal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 3em;
+  /* padding:1em ; */
+}
+.aboutUs-personal-img {
+  height: 20em;
+  width: 19em;
+  background: #D9D9D9;
+}
+.aboutUs-personal-details {
+  margin-top: .5em;
+}
