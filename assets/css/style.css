@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: poppins;
+  position: relative;
 }
 
 main {
@@ -23,9 +24,30 @@ nav {
   justify-content: space-between;
   align-items: center;
   /* margin: 0.5em 0.8em; */
-  padding: .5em .8em;
+  padding: 0 .8em;
   /* border: 2px solid red; */
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.sticky {
+  background-color: #dcdcdc; /* Change background color when sticky */
+  animation: fadeInDown 0.8s ease; /* Apply animation when sticky */
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 nav .nav-logo img {
