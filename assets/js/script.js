@@ -53,23 +53,23 @@ function getVideoURL(index) {
   // Example:
   switch (index) {
     case 1:
-      return 'https://www.youtube.com/embed/N61HAwYrp3Y';
+      return 'https://www.youtube.com/embed/N61HAwYrp3Y?autoplay=1';
     case 2:
-      return 'https://www.youtube.com/embed/UhOxp_dsuVE';
+      return 'https://www.youtube.com/embed/UhOxp_dsuVE?autoplay=1';
     case 3:
-      return 'https://www.youtube.com/embed/my-q2pVzudU';
+      return 'https://www.youtube.com/embed/my-q2pVzudU?autoplay=1';
     case 4:
-      return 'https://www.youtube.com/embed/HC9sNigO6is';
+      return 'https://www.youtube.com/embed/HC9sNigO6is?autoplay=1';
     case 5:
-      return 'https://www.youtube.com/embed/l1z5nYjOKY0';
+      return 'https://www.youtube.com/embed/l1z5nYjOKY0?autoplay=1';
     case 6:
-      return 'https://www.youtube.com/embed/Q1zA0u_5GIo';
+      return 'https://www.youtube.com/embed/Q1zA0u_5GIo?autoplay=1';
     case 7:
-      return 'https://www.youtube.com/embed/olvW7TKFRjM';
+      return 'https://www.youtube.com/embed/olvW7TKFRjM?autoplay=1';
     case 8:
-      return 'https://www.youtube.com/embed/KORyCMjXA7c';
+      return 'https://www.youtube.com/embed/KORyCMjXA7c?autoplay=1';
     case 9:
-      return 'https://www.youtube.com/embed/W2CjinAKxbI';
+      return 'https://www.youtube.com/embed/W2CjinAKxbI?autoplay=1';
     default:
       return ''; // Return empty string or default video URL
   }
