@@ -179,7 +179,10 @@ section .org-text h1 span:nth-child(3) {
   background: #cccdcc;
   border: 1px solid gray;
 }
-
+a.org-text-icon {
+  color: inherit;
+  text-decoration: none;
+}
 .org-text-icon img {
   height: 2em;
   width: auto;
