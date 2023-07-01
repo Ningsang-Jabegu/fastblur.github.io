@@ -1026,7 +1026,15 @@ h2.process-heading {
   gap: 2em;
   /* border: 2px solid red; */
 }
-
+.testimonials .upwork {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-end;
+  width: 100%;
+}
+.upwork p {
+  font-size: 10pt;
+}
 @media (max-width:780px) {
   .testimonial-info {
     flex-wrap: wrap;
