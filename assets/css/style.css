@@ -232,8 +232,10 @@ a.org-text-icon {
   width: 24.9em;
   border-radius: 0.9em;
 }
-
-.r-work h1 {
+.r-work {
+  margin: 1em;
+}
+#home  .r-work h1 {
   color: #fb476c;
   font-weight: bold;
   font-size: 30pt;
@@ -847,4 +849,16 @@ footer .icon a {
    width: 100%;
    margin-left: 0;
  }
+}
+
+/*Portfolio page style*/
+section.r-work h1 {
+  color: #000000;
+  font-weight: bolder;
+  font-size: 30pt;
+  text-align: left;
+  width: 8em;
+}
+span.port-work{
+  color: #fb476c!important;
 }
