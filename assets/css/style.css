@@ -111,6 +111,7 @@ section.org-info {
   align-items: center;
   margin: 4em 0;
   flex-wrap: wrap;
+  gap: 2em;
 }
 
 section .org-text {
@@ -192,8 +193,10 @@ section .org-text h1 span:nth-child(3) {
 .org-img {
   border-radius: 0.9em;
   overflow: hidden;
+  height: 18em;
+  width: 25em;
 }
-.org-img iframe {
+.org-img video {
   height: 14em;
   width: 24.9em;
   border-radius: 0.9em;
