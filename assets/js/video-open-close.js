@@ -39,11 +39,17 @@ videoElements.forEach((videoElement, index) => {
 
 // Add event listener to close the display container
 closeButton.addEventListener('click', () => {
-  displayContainer.removeChild(displayVideoContainer);
+  if (displayContainer.contains(displayVideoContainer)) {
+    displayContainer.removeChild(displayVideoContainer);
+  }
 });
+
 displayVideoContainer.addEventListener('click', () => {
-  displayContainer.removeChild(displayVideoContainer);
+  if (displayContainer.contains(displayVideoContainer)) {
+    displayContainer.removeChild(displayVideoContainer);
+  }
 });
+
 
 function getVideoURL(index) {
   // Add logic to return the appropriate video URL based on the index
@@ -51,23 +57,23 @@ function getVideoURL(index) {
   // Example:
   switch (index) {
     case 1:
-      return 'https://www.youtube.com/embed/N61HAwYrp3Y?autoplay=1';
+      return 'https://www.youtube.com/embed/N61HAwYrp3Y?autoplay=1&SameSite=None';
     case 2:
-      return 'https://www.youtube.com/embed/UhOxp_dsuVE?autoplay=1';
+      return 'https://www.youtube.com/embed/UhOxp_dsuVE?autoplay=1&SameSite=None';
     case 3:
-      return 'https://www.youtube.com/embed/my-q2pVzudU?autoplay=1';
+      return 'https://www.youtube.com/embed/my-q2pVzudU?autoplay=1&SameSite=None';
     case 4:
-      return 'https://www.youtube.com/embed/HC9sNigO6is?autoplay=1';
+      return 'https://www.youtube.com/embed/HC9sNigO6is?autoplay=1&SameSite=None';
     case 5:
-      return 'https://www.youtube.com/embed/l1z5nYjOKY0?autoplay=1';
+      return 'https://www.youtube.com/embed/l1z5nYjOKY0?autoplay=1&SameSite=None';
     case 6:
-      return 'https://www.youtube.com/embed/Q1zA0u_5GIo?autoplay=1';
+      return 'https://www.youtube.com/embed/Q1zA0u_5GIo?autoplay=1&SameSite=None';
     case 7:
-      return 'https://www.youtube.com/embed/olvW7TKFRjM?autoplay=1';
+      return 'https://www.youtube.com/embed/olvW7TKFRjM?autoplay=1&SameSite=None';
     case 8:
-      return 'https://www.youtube.com/embed/KORyCMjXA7c?autoplay=1';
+      return 'https://www.youtube.com/embed/KORyCMjXA7c?autoplay=1&SameSite=None';
     case 9:
-      return 'https://www.youtube.com/embed/W2CjinAKxbI?autoplay=1';
+      return 'https://www.youtube.com/embed/W2CjinAKxbI?autoplay=1&SameSite=None';
     default:
       return ''; // Return empty string or default video URL
   }

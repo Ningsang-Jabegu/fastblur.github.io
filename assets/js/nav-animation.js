@@ -1,3 +1,17 @@
+const nav = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 0) {
+    nav.classList.add('sticky');
+  } else {
+    nav.classList.remove('sticky');
+  }
+});
+
+
+
 const mobileNavIcon = document.querySelector(".nav-menu");
 const showOnClick = document.querySelector("nav .nav-item");
 const backDrop = document.querySelector("#back-drop");
