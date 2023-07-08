@@ -169,7 +169,8 @@ line-height: normal;
 }
 
 section .org-text h1 span:nth-child(1) {
-  background: linear-gradient(267.82deg, #d82a2a 33.74%, #084bff 89.62%);
+  background: linear-gradient(267.82deg, #D82A2A 33.74%, #084BFF 89.62%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -573,15 +574,15 @@ footer {
   /* border: 2px solid gray; 
 } */
 
-.footer-img::after {
+/* .footer-img::after {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
-  /* background-color: #0b1c6142; */
-}
+  /* background-color: #0b1c6142; *
+} */
 
 .footer-img img {
   height: 100%;
@@ -1006,12 +1007,13 @@ footer .icon a {
 
 h1.r-work-port,
 h1.p-work-port {
-  color: #000000;
-  font-weight: bolder;
-  font-size: 30pt;
-  text-align: left;
-
-  margin-left: .5em;
+  color: #0C072D;
+font-size: 60px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 800;
+line-height: 113%;
+  margin:91px 87px;
 }
 
 span.port-work,
@@ -1021,28 +1023,30 @@ h2.process-heading {
 
 /*Process page style*/
 .process {
-  padding: 0 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
 }
 
 .process-row {
-  background: #1f47f321;
-  padding: 1em;
+  /* background: #1f47f321; */
+  /* padding: 1em; */
   display: flex;
-  margin: .9em 0;
+  margin: 0 81px ;
   overflow: hidden;
   /* flex-wrap: wrap; */
   align-items: center;
-  justify-content: center;
-  box-shadow: inset 1px 1px 19px -2px #0000003e;
+  justify-content: space-between;
+  max-height: 470px;
+  /* box-shadow: inset 1px 1px 19px -2px #0000003e;
   -webkit-box-shadow: inset 1px 1px 19px -2px #0000003e;
-  -moz-box-shadow: inset 1px 1px 19px -2px #0000003e;
+  -moz-box-shadow: inset 1px 1px 19px -2px #0000003e; */
 }
-
-.process-row-inverse {
-  border-radius: 1.5em 0 0 1.5em;
-  border-right: 3px solid #1f47f3;
+.process-row-reversed {
+  background: #F6F2F2;
+  margin: 0;
+  padding: 0 81px;
 }
-
 .process-row .process-img {
   height: 22em;
   width: 22em;
@@ -1053,18 +1057,24 @@ h2.process-heading {
   height: 100%;
   width: 100%;
 }
-
+.process-heading {
+  color: #FB476C;
+font-size: 50px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 800;
+line-height: 113%;
+margin-bottom: 11px;
+}
 .process-text {
-  width: min(90%, 50em);
+  max-width: 786px;
+  color: #2A1C2E;
+font-size: 30px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 400;
+line-height: 40px;
 }
-
-.process-row-reversed {
-  display: flex;
-  background: #ece3e3;
-  border-radius: 0 1.5em 1.5em 0;
-  border-left: 3px solid #ca9898;
-}
-
 .process-row-reversed .process-text {
   order: 2;
 }
