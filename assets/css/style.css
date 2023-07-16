@@ -579,10 +579,6 @@ footer {
   display: grid;
   grid-template-areas: "footer-img footer-img footer-img footer-img footer-img footer-img";
 }
-.footer-row .footer-img {
-  /* max-height: 12.625em; */
-  /* grid-area: "footer-img"; */
-}
 .footer-img.foot-img-1 {
   grid-column: span 3;
   max-width: 25.625em;
@@ -1020,7 +1016,7 @@ footer .icon a {
 
   nav {
     /* margin: 0.5em; */
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
 
