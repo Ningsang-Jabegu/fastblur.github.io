@@ -312,7 +312,7 @@ a.org-text-icon {
   overflow: hidden;
   max-height: 21em;
   max-width: 37.375em;
-  min-height: 20em;
+  /* min-height: 20em; */
 }
 
 .org-img video {
@@ -705,7 +705,7 @@ footer .icon a {
   .org-img {
     display: flex;
     justify-content: center;
-    min-height: 11em;
+    /* min-height: 11em; */
   }
 
   .org-img video {
@@ -795,7 +795,54 @@ footer .icon a {
 .org-info+a {
   display: none;
 }
+@media (max-width:360px) {
+  .org-text h1 {
+    text-align: center;
+  }
+  .org-imp-txt {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4em;
+  }
+  .org-text-main .org-text-plus:nth-child(1) {
+    top: -1.3em;
+    left: 1.4em;
+}
+.org-text-main .org-text-plus:nth-child(2) {
+  bottom: -1.3em;
+  right:  1.4em;
+}
+.org-text-main {
+  /* max-width: fit-content; */
+  text-align: center;
+  margin: .7em auto;
+}
+  .org-img {
+    height: auto;
+    width: auto;
+  }
+  .org-text-info {
+    width: 100%;
+    align-items: center;
+  }
+  .org-text-info .org-text-icon{
+    /* flex-direction: row; */
+    text-align: center;
+    width: 100%;
+    gap: .9em;
+  }
+  footer .icon a i {
+    font-size: 8pt;
+  }
+  .footer-org-detail .social-icons .icon {
+    gap: 1em!important;
+  }
+}
 @media (max-width:870px) and (min-width:600px) {
+  .org-img {
+    min-height: auto;
+    width: 70%;
+  }
   section.org-info {
     height: auto;
     display: grid;
@@ -822,6 +869,17 @@ footer .icon a {
     grid-template-areas: "footer";
   }
 }
+@media (max-width:600px) and (min-width:360px) {
+  .org-text-main .org-text-plus:nth-child(1) {
+    top: .2em;
+    left: -.7em;
+  }
+
+  .org-text-main .org-text-plus:nth-child(2) {
+    top: .2em;
+    right: -.4em;
+  }
+}
 @media (max-width:600px) {
   section.org-info {
     height: auto;
@@ -833,16 +891,6 @@ footer .icon a {
 
   .org-imp-txt .org-text-main:nth-child(2) {
     margin: 0 1em;
-  }
-
-  .org-text-main .org-text-plus:nth-child(1) {
-    top: .2em;
-    left: -.7em;
-  }
-
-  .org-text-main .org-text-plus:nth-child(2) {
-    top: .2em;
-    right: -.4em;
   }
 
   
