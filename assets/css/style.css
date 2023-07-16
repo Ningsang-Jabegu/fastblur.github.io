@@ -1016,7 +1016,8 @@ footer .icon a {
 
   nav {
     /* margin: 0.5em; */
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 5.8em;
   }
 
 
@@ -1036,6 +1037,7 @@ footer .icon a {
   nav {
     /* flex-direction: column; */
     padding: .5em;
+    gap: .3em;
     /* border-bottom: 2px solid salmon; */
     /* flex-wrap: wrap; */
   }
