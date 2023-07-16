@@ -1,18 +1,13 @@
-let prevScrollPos = window.pageYOffset;
 const nav = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
-  const currentScrollPos = window.pageYOffset;
+  const scrollPosition = window.scrollY;
 
-  if (prevScrollPos > currentScrollPos) {
-    // Scrolling up
-    nav.classList.add('nav-visible');
+  if (scrollPosition > 0) {
+    nav.classList.add('sticky');
   } else {
-    // Scrolling down
-    nav.classList.remove('nav-visible');
+    nav.classList.remove('sticky');
   }
-
-  prevScrollPos = currentScrollPos;
 });
 
 
