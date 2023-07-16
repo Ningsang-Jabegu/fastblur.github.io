@@ -15,10 +15,6 @@ body {
   position: relative;
 }
 
-main {
-  /* margin: 1em; */
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -386,7 +382,7 @@ a.org-text-icon {
   width: 100%;
 }
 
-.r-work-videos .video:nth-child(1):hover::before {
+/* .r-work-videos .video:nth-child(1):hover::before {
   content: 'Smart City';
 }
 
@@ -420,8 +416,10 @@ a.org-text-icon {
 
 .r-work-videos .video:nth-child(9):hover::before {
   content: 'Signathon';
+} */
+.r-work-videos .video:hover::before {
+  content: var(--content);
 }
-
 .video::after {
   content: '';
   position: absolute;
@@ -799,6 +797,7 @@ footer .icon a {
 }
 @media (max-width:870px) and (min-width:600px) {
   section.org-info {
+    height: auto;
     display: grid;
     grid-template-areas: 'main-homepage';
   }
@@ -817,7 +816,7 @@ footer .icon a {
     max-width: 100%;
     margin: 2.4375em 0.84375em 1.5em 0.84375em;
     border-radius: 20px;
-    min-height: 184px;
+    max-height: 184px;
   }
   footer {
     grid-template-areas: "footer";
@@ -1505,4 +1504,36 @@ height: clamp(24em,1vh,25em); */
 
 .aboutUs-degicnation {
   font-size: 9.9pt;
+}
+
+/*video-menu style*/
+.video-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin: 91px 0 169px 0;
+}
+.video-menu a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+}
+.video-menu a.selected {
+  color: #0D47FF;
+  font-weight: 700;
+}
+.video-menu > a:hover:not(a.selected)::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #FF5C64;
+}
+.video-hide {
+  display: none;
 }
