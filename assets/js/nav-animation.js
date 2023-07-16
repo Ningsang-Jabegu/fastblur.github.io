@@ -1,15 +1,19 @@
+let prevScrollPos = window.pageYOffset;
 const nav = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY;
+  const currentScrollPos = window.pageYOffset;
 
-  if (scrollPosition > 0) {
-    nav.classList.add('sticky');
+  if (prevScrollPos > currentScrollPos) {
+    // Scrolling up
+    nav.classList.add('nav-visible');
   } else {
-    nav.classList.remove('sticky');
+    // Scrolling down
+    nav.classList.remove('nav-visible');
   }
-});
 
+  prevScrollPos = currentScrollPos;
+});
 
 
 const mobileNavIcon = document.querySelector(".nav-menu");
@@ -27,8 +31,8 @@ mobileNavIcon.addEventListener("click", () => {
     requestAnimationFrame(() => {
       showOnClick.animate(
         [
-            { transform: "translateY(-100%)" },
-            { transform: "translateY(0%)" },
+            { opacity: "1",transform: "translateY(-100%)"},
+            { opacity: "1",transform: "translateY(0%)" },
             
         ],
         {
@@ -43,8 +47,8 @@ mobileNavIcon.addEventListener("click", () => {
 function hideMe() {
     showOnClick.animate(
       [
-        { transform: "translateY(0%)" },
-      { transform: "translateY(-100%)" },
+        { opacity: "1" },
+      { opacity: "0" },
       ],
       {
         duration: 300,
@@ -54,7 +58,6 @@ function hideMe() {
     ).onfinish = () => {
       showOnClick.classList.remove("show-f");
       backDrop.classList.remove("back-drop");
-      showOnClick.style.marginTop = "3em";
     };
   }
   
