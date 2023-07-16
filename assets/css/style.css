@@ -48,7 +48,6 @@ nav {
     transform: translateY(0);
   }
 }
-
 nav .nav-logo img {
   height: 4em;
   width: auto;
@@ -767,6 +766,8 @@ footer .icon a {
 
   nav .nav-item {
     display: none;
+    margin-top: 3em;
+    z-index: 1;
   }
 
   .nav-menu {
@@ -776,8 +777,20 @@ footer .icon a {
 
   .nav-menu i {
     font-size: 13pt;
-  }
 
+  }
+  nav ul li:hover:not(.nav-btn):before {
+    background: transparent;
+  }
+  nav ul a{
+    width: 100%;
+    padding-left: .3em;
+  }
+  nav ul {
+    min-width: 12em;
+    width: 12em;
+    border-radius: 10px;
+  }
   .org-img img {
     width: 100%;
   }
@@ -1016,7 +1029,8 @@ footer .icon a {
 
   nav {
     /* margin: 0.5em; */
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 5.8em;
   }
 
 
@@ -1036,6 +1050,7 @@ footer .icon a {
   nav {
     /* flex-direction: column; */
     padding: .5em;
+    gap: .3em;
     /* border-bottom: 2px solid salmon; */
     /* flex-wrap: wrap; */
   }
