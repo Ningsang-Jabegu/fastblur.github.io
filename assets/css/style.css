@@ -655,14 +655,25 @@ footer {
 
 .footer-right a.s-hello:hover {
   cursor: pointer;
-  background-color: #e9e6e626;
+  background-color: #adacac26;
 }
 
 .footer-right a.s-hello:active {
   cursor: pointer;
-  background-color: #e9e6e65a;
+  background-color: #7d7d7d5a;
 }
-
+.tel-cel {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+.tel-cel:hover {
+  color: #d7d7d7;
+  text-decoration: underline;
+}
+.tel-cel:active {
+  color: #b3b2b5;
+}
 .footer-org-detail {
   /* display: flex; */
   font-weight: 500;
@@ -816,7 +827,7 @@ footer .icon a {
   display: none;
 }
 
-@media (max-width:360px) {
+@media (max-width:361px) {
   .org-text h1 {
     text-align: center;
   }
@@ -908,7 +919,7 @@ footer .icon a {
   }
 }
 
-@media (max-width:600px) and (min-width:360px) {
+@media (max-width:600px) and (min-width:361px) {
   .org-text-main .org-text-plus:nth-child(1) {
     top: .2em;
     left: -.7em;
