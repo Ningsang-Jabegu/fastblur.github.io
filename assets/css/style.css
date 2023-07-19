@@ -2,6 +2,11 @@
 
 :root {
   --primary-font: poppins, sans-serif;
+  --primary-background: #fff;
+  --primary-red: #ff5c64;
+  --primary-blue: #0C072D;
+  --scroll-navigation-background: #d4dae9;
+  --font-white: #fff;
 }
 
 html,
@@ -29,12 +34,12 @@ nav {
   position: sticky;
   top: 0;
   z-index: 3;
-  background: #fff;
+  background: var(--primary-background);
   transition: background-color 0.3s ease;
 }
 
 .sticky {
-  background-color: #d4dae9;
+  background-color: var(--scroll-navigation-background);
   animation: fadeInDown 0.8s ease;
 }
 
@@ -59,7 +64,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 2.625em;
-  font-family: poppins;
+  font-family: var(--primary-font);
   position: relative;
   align-items: center;
 }
@@ -72,9 +77,9 @@ nav ul a {
 nav ul li {
   cursor: pointer;
   position: relative;
-  color: #0C072D;
+  color: var(--primary-blue);
   font-size: 20px;
-  font-family: Poppins;
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -86,7 +91,7 @@ nav ul li.selected::before {
   width: 100%;
   position: absolute;
   bottom: -0.625em;
-  background: #ff5c64;
+  background: var(--primary-red);
 }
 
 nav ul li:hover:not(.nav-btn):before {
@@ -95,11 +100,11 @@ nav ul li:hover:not(.nav-btn):before {
   width: 100%;
   position: absolute;
   bottom: -0.625em;
-  background: #ff5c64;
+  background: var(--primary-red);
 }
 
 .nav-btn {
-  color: #FFF;
+  color: var(--font-white);
   cursor: pointer;
   width: 165px;
   height: 50px;
@@ -114,7 +119,7 @@ nav ul li:hover:not(.nav-btn):before {
   width: 100%;
   height: 100%;
   font-size: 20px;
-  font-family: Poppins;
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 800;
 }
@@ -136,7 +141,7 @@ nav ul li:hover:not(.nav-btn):before {
 }
 
 .show-b {
-  display: block !important;
+  display: block !important; /*for the mobile size navigation hamburger icon*/
 }
 
 main {
@@ -175,7 +180,7 @@ section .org-text h1 {
   color: #270063;
   margin: 0 0 .4em 0;
   font-size: 50px;
-  font-family: Poppins;
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -185,7 +190,7 @@ section .org-text h1 {
   display: inline-block;
   max-width: 5.6875em;
   color: #FB476C;
-  font-family: Poppins;
+  font-family: var(--primary-font);
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -199,7 +204,7 @@ section .org-text h1 {
   font-style: normal;
   font-weight: 800;
   font-size: 45px;
-  background: linear-gradient(198.38deg, #084BFF 27.43%, #FF5C64 73.41%);
+  background: linear-gradient(198.38deg, #084BFF 27.43%, var(--primary-red) 73.41%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -310,7 +315,7 @@ a.org-text-icon {
   color: #FB476C;
   text-align: center;
   font-size: 60px;
-  font-family: Poppins;
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 800;
   line-height: 94%;
@@ -355,7 +360,7 @@ a.org-text-icon {
   right: 0;
   top: 0;
   text-align: center;
-  color: #fff;
+  color: var(--font-white);
   z-index: 1;
   font-weight: bolder;
   font-size: 15pt;
@@ -415,7 +420,7 @@ a.org-text-icon {
   background-color: transparent;
   border: none;
   font-size: 16pt;
-  background: #ffffff;
+  background: var(--primary-background);
   padding: 0 .3em;
   border-radius: 50%;
   cursor: pointer;
@@ -444,7 +449,7 @@ a.org-text-icon {
 
 .homepage-join button {
   background: #fb476c;
-  color: #FFF;
+  color: var(--font-white);
   text-align: center;
   font-size: 30px;
   font-family: var(--primary-font);
@@ -472,7 +477,7 @@ a.org-text-icon {
   color: #0C082D;
   text-align: center;
   font-size: 30px;
-  font-family: Poppins;
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   line-height: 120.5%;
@@ -563,9 +568,9 @@ footer {
 }
 
 .footer-right h3 {
-  color: #FFF;
+  color: var(--font-white);
   font-size: 63.495px;
-  font-family: Poppins;
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 700;
   line-height: 99.5%;
@@ -576,11 +581,11 @@ footer {
 .footer-right a.s-hello {
   text-decoration: none;
   display: inline;
-  border: 8.715px solid #fff;
+  border: 8.715px solid var(--font-white);
   padding: 0.342em 1.4599em;
-  color: #FFF;
+  color: var(--font-white);
   font-size: 37.35px;
-  font-family: Poppins;
+  font-family: var(--primary-font);
   font-style: normal;
   width: fit-content;
   font-weight: 700;
@@ -666,8 +671,8 @@ footer .icon a {
     font-size: 25pt;
   }
 
-  a.s-hello {
-    font-size: 15pt !important;
+  div.footer-right a.s-hello {
+    font-size: 15pt;
   }
 
   .footer-row.footer-img-1 {
@@ -801,8 +806,8 @@ footer .icon a {
     font-size: 8pt;
   }
 
-  .footer-org-detail .social-icons .icon {
-    gap: 1em !important;
+  div.footer-org-detail div.social-icons div.icon {
+    gap: 1em;
   }
 }
 
@@ -967,9 +972,9 @@ footer .icon a {
     gap: 36px;
   }
 
-  a.s-hello {
-    border: 5px solid #fff !important;
-    font-weight: 400 !important;
+  div.footer-right a.s-hello {
+    border: 5px solid var(--font-white);
+    font-weight: 400 ;
     margin-bottom: 23px;
   }
 
@@ -1034,16 +1039,16 @@ footer .icon a {
     line-height: 1.3;
   }
 
-  .quote {
-    padding: 0 !important;
+  div.quote {
+    padding: 0 ;
   }
 
-  .testimonial-box::after {
-    bottom: -2.5em !important;
+  div.testimonial-box::after {
+    bottom: -2.5em ;
   }
 
-  .testimonial-box::before {
-    top: -3em !important;
+  div.testimonial-box::before {
+    top: -3em ;
   }
 }
 
@@ -1146,7 +1151,7 @@ footer .icon a {
 .container {
   width: 85%;
   margin: auto;
-  background: #fff;
+  background: var(--primary-background);
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -1246,7 +1251,7 @@ footer .icon a {
 }
 
 .right-side .button input[type="button"] {
-  color: #fff;
+  color: var(--font-white);
   font-size: 18px;
   outline: none;
   border: none;
@@ -1314,7 +1319,7 @@ footer .icon a {
   align-items: center;
   display: flex;
   gap: .8em;
-  color: #fff;
+  color: var(--font-white);
 }
 
 .more-videos:hover {
@@ -1329,7 +1334,7 @@ footer .icon a {
 
 h1.r-work-port,
 h1.p-work-port {
-  color: #0C072D;
+  color: var(--primary-blue);
   font-size: 70px;
   font-family: var(--primary-font);
   font-style: normal;
@@ -1347,9 +1352,9 @@ h1.r-work-port {
   margin: 91px 87px;
 }
 
-@media (max-width:600px) {
+@media (max-width:780px) {
   .process h1.p-work-port {
-    margin: 0;
+    margin: 67.33px 0;
   }
 }
 
@@ -1372,7 +1377,7 @@ h1.r-work-port {
 
 span.port-work,
 h2.process-heading {
-  color: #fb476c !important;
+  color: #fb476c;
 }
 
 /*Process page style*/
@@ -1443,14 +1448,26 @@ h2.process-heading {
   background: #E3D1FF;
 }
 
-@media (max-width:800px) {
-  .process-row .process-img {
-    height: auto !important;
-    width: auto !important;
+.process-heading {
+  color: #FB476C;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 113%;
+  margin-bottom: 11px;
+}
+  .process-heading {
+    font-size: 50px;
   }
 
-  .process-heading {
-    font-size: 25px !important;
+@media (max-width:800px) {
+  div.process-row .process-img {
+    height: auto;
+    width: auto ;
+  }
+
+  div.process-text h2.process-heading {
+    font-size: 25px;
   }
 }
 
@@ -1501,16 +1518,6 @@ h2.process-heading {
   width: 100%;
 }
 
-.process-heading {
-  color: #FB476C;
-  font-size: 50px;
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 800;
-  line-height: 113%;
-  margin-bottom: 11px;
-}
-
 .process-text {
   max-width: 790px;
   color: #2A1C2E;
@@ -1551,7 +1558,7 @@ h2.process-heading {
   }
 
   .testimonials h1.p-work-port {
-    margin: 0 !important;
+    margin: 0;
   }
 }
 
@@ -1888,7 +1895,7 @@ div.rating {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: #FF5C64;
+  background-color: var(--primary-red);
 }
 
 .video-hide {
