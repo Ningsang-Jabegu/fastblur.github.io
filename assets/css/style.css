@@ -1849,11 +1849,19 @@ div.rating {
   background: rgba(8, 75, 255, 0.20);
 }
 
-.aboutUs-personal-img.red-bg-img img::after {
+.aboutUs-personal-img {
   position: relative;
 }
 
-.aboutUs-personal-img.red-bg-img img::after {
+div.blue-bg-img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(8, 75, 255, 0.20);
+}
+div.red-bg-img{
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1861,7 +1869,6 @@ div.rating {
   left: 0;
   background: rgba(251, 71, 108, 0.20);
 }
-
 .aboutUs-degicnation {
   font-size: 9.9pt;
 }
