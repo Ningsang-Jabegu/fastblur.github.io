@@ -39,12 +39,19 @@ moreVideosButton.addEventListener("click", () => {
       video.classList.remove("video-hide");
     }
   });
-  // alert("HI");
-  // moreVideosButton.innerText = "Less -";
-  moreVideosButton.style.display = "none";
-  hideButtons.forEach((button) => {
-    if (video_Elements.hasAttribute("initial_hide")) {
-      div.classList.add("hide-video");
-    }
-  });
+  moreVideosButton.innerText = "Less -";
+  if(moreVideosButton.innerHTML == "Less -") {
+    moreVideosButton.addEventListener("click", () => {
+      video_Elements.forEach((video) => {
+        moreVideosButton.addEventListener("click", () => {
+          video_Elements.forEach((video) => {
+            if (video.classList.contains("video-hide")) {
+              console.log("I entered ...");
+              video.classList.remove("video-hide");
+            }
+          })
+        })
+      })
+    });
+  }
 });
