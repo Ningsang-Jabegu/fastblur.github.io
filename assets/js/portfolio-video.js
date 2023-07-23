@@ -34,11 +34,6 @@ const video_Elements = document.querySelectorAll(".r-work-videos .video");
 const hideButtons = document.querySelectorAll(".hide-video-button");
 
 moreVideosButton.addEventListener("click", () => {
-  video_Elements.forEach((video) => {
-    if (video.classList.contains("video-hide")) {
-      video.classList.remove("video-hide");
-    }
-  });
   moreVideosButton.innerText = "Less -";
   if(moreVideosButton.innerHTML == "Less -") {
     moreVideosButton.addEventListener("click", () => {
@@ -46,12 +41,19 @@ moreVideosButton.addEventListener("click", () => {
         moreVideosButton.addEventListener("click", () => {
           video_Elements.forEach((video) => {
             if (video.classList.contains("video-hide")) {
-              console.log("I entered ...");
+              
               video.classList.remove("video-hide");
             }
           })
         })
       })
+    });
+  }
+  else {
+    video_Elements.forEach((video) => {
+      if (video.classList.contains("video-hide")) {
+        video.classList.remove("video-hide");
+      }
     });
   }
 });
