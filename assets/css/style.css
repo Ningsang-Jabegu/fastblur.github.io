@@ -359,22 +359,29 @@ a.org-text-icon {
   z-index: -1;
 }
 
-.r-work-videos .video:hover::before {
-  content: "";
+.video::before {
+  content: var(--content, ""); /* Use --content as the default value */
+  opacity: 0;
   position: absolute;
   right: 0;
   top: 0;
   text-align: center;
   color: var(--font-white);
-  z-index: 1;
+  z-index: 0; 
   font-weight: bolder;
   font-size: 15pt;
-  line-height: 20;
-  transition: content 100ms;
-  background: #2a1c2eb4;
+  line-height: 20; 
+  background: transparent;
+  transition: background 400ms, opacity 600ms;
   background-size: 100% 100%;
   height: 100%;
   width: 100%;
+}
+
+.video:hover::before {
+  z-index: 1; 
+  background: #160117a9; 
+  opacity: 1;
 }
 
 .r-work-videos .video:hover::before {
@@ -393,8 +400,9 @@ a.org-text-icon {
 
 .video:hover::after {
   background: url(/assets/images/background/video-10.svg);
-  z-index: 2;
+  z-index: 1;
   transform: scale(2);
+  transition: transform 700ms;
   background-repeat: no-repeat;
   background-position: center;
 }
