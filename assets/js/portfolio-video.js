@@ -33,27 +33,27 @@ const moreVideosButton = document.querySelector(".more-videos");
 const video_Elements = document.querySelectorAll(".r-work-videos .video");
 const hideButtons = document.querySelectorAll(".hide-video-button");
 
-moreVideosButton.addEventListener("click", () => {
-  moreVideosButton.innerText = "Less -";
-  if(moreVideosButton.innerHTML == "Less -") {
-    moreVideosButton.addEventListener("click", () => {
-      video_Elements.forEach((video) => {
-        moreVideosButton.addEventListener("click", () => {
-          video_Elements.forEach((video) => {
-            if (video.classList.contains("video-hide")) {
+// moreVideosButton.addEventListener("click", () => {
+//   moreVideosButton.innerText = "Less -";
+//   if(moreVideosButton.innerHTML == "Less -") {
+//     moreVideosButton.addEventListener("click", () => {
+//       video_Elements.forEach((video) => {
+//         moreVideosButton.addEventListener("click", () => {
+//           video_Elements.forEach((video) => {
+//             if (video.classList.contains("video-hide")) {
               
-              video.classList.remove("video-hide");
-            }
-          })
-        })
-      })
-    });
-  }
-  else {
-    video_Elements.forEach((video) => {
-      if (video.classList.contains("video-hide")) {
-        video.classList.remove("video-hide");
-      }
-    });
-  }
-});
+//               video.classList.remove("video-hide");
+//             }
+//           })
+//         })
+//       })
+//     });
+//   }
+//   else {
+//     video_Elements.forEach((video) => {
+//       if (video.classList.contains("video-hide")) {
+//         video.classList.remove("video-hide");
+//       }
+//     });
+//   }
+// });
