@@ -81,10 +81,12 @@ const displayVideos = (selectedCategory) => {
         const div = document.createElement("div");
         div.classList.add("video");
         div.id = category;
-
+        div.classList.add("skeleton");
         const img = document.createElement("img");
         img.src = item.img;
         img.alt = item.name;
+        
+        img.setAttribute("loading","lazy");
 
         div.addEventListener("mouseover", () => {
           div.style.setProperty("--content", `'${item.name}'`);

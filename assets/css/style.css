@@ -358,6 +358,17 @@ a.org-text-icon {
   object-fit: cover;
   z-index: -1;
 }
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading  {
+  0% {
+    background-color: hsl(200,20%,70%);
+  }
+  100% {
+    background-color: hsl(200,20%,95%);
+  }
+}
 
 .video::before {
   content: var(--content, ""); /* Use --content as the default value */
