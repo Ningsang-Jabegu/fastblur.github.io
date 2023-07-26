@@ -13,12 +13,12 @@ const categories = {
         {
           name: "Realest", 
           img: "/assets/images/video_thumbnails/Portfolio/Character_Driven/video-3.svg" ,
-          src: "https://www.youtube.com/embed/hQwGuQ0XOiA?autoplay=1&SameSite=None"
+          src: "https://www.youtube.com/embed/gN3-w8eeO7w?autoplay=1&SameSite=None"
         },
         {
           name: "Soundtrace", 
           img: "/assets/images/video_thumbnails/Portfolio/Character_Driven/video-4.svg",
-          src: "https://www.youtube.com/embed/6_oMDmJXIJA?autoplay=1&SameSite=None" 
+          src: "https://www.youtube.com/embed/6UqGaZDU0ng?autoplay=1&SameSite=None" 
         },
         {
           name: "Warmfuzzies", 
@@ -28,7 +28,7 @@ const categories = {
         {
           name: "Rekenix", 
           img: "/assets/images/video_thumbnails/Portfolio/Character_Driven/video-6.svg",
-          src: "https://www.youtube.com/embed/W2CjinAKxbI?autoplay=1&SameSite=None" 
+          src: "https://www.youtube.com/embed/hQwGuQ0XOiA?autoplay=1&SameSite=None" 
         },
         {
           name: "Rekenix", 
@@ -38,7 +38,7 @@ const categories = {
         {
           name: "Brain Parlor", 
           img: "/assets/images/video_thumbnails/Portfolio/Character_Driven/video-8.svg",
-          src: "https://www.youtube.com/embed/oSYC2matVqI?autoplay=1&SameSite=None" 
+          src: "https://www.youtube.com/embed/feDeploBxAc?autoplay=1&SameSite=None" 
         },
         {
           name: "Signathon", 
