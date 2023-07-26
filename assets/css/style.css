@@ -1387,7 +1387,7 @@ h1.r-work-port {
 }
 
 @media (max-width: 990px) and (min-width: 780px) {
-  h1.r-work-port,
+  
   h1.p-work-port {
     display: inline;
   }
@@ -1648,7 +1648,6 @@ div.quote div.testimonial-box p.testimonial-words {
 }
 
 @media (max-width: 420px) {
-  h1.r-work-port,
   h1.p-work-port {
     display: inline;
   }
@@ -2004,6 +2003,7 @@ div.red-bg-img {
 .blog-thumbnail {
   max-height: 189px;
   max-width: 342px;
+  /* ***** */
 }
 .blog-thumbnail img {
   height: 100%;
