@@ -410,7 +410,7 @@ a.org-text-icon {
 }
 
 .video:hover::after {
-  background: url(/assets/images/background/video-10.svg);
+  background: url(/assets/images/background/hover-play-btn.svg);
   z-index: 1;
   transform: scale(2);
   transition: transform 700ms;
