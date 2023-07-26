@@ -8,7 +8,7 @@ const categories = {
         {
           name: "Snoopy Cap", 
           img: "/assets/images/video_thumbnails/Portfolio/Character_Driven/video-2.svg",
-          src: "https://www.youtube.com/embed/gN3-w8eeO7w?autoplay=1&SameSite=None" 
+          src: "https://www.youtube.com/embed/IbUX70vdf-0?autoplay=1&SameSite=None" 
         },
         {
           name: "Realest", 
