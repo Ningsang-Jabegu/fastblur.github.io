@@ -83,10 +83,10 @@ section except favicon, and title
                     The href (hypertext refrence) is provided # because we don't want to go to any page / anywere.
                     ========================================================================================================-->
                     <a href="#">
-                        <!-- ===================================================================================================
+                        <!-- ==================================================================================================
                         Here class="selected" is given for the underline for the list item itself which shows the current page 
                         in the website
-                        =====================================================================================================-->
+                        ====================================================================================================-->
                         <li class="selected">Home</li>
                     </a>
                     <a href="/assets/Internal-pages/portfolio.html">
@@ -121,60 +121,73 @@ section except favicon, and title
             </div>
         </nav>
 
-        <!-- =================================================================================================================
+        <!-- ==================================================================================================================
         This back-drop div box is for the semi-transparant black background that is displayed when the video is clicked by 
         user, else normally (default) it do not contain any css property, means that do nothing.
-        ===================================================================================================================-->
+        ====================================================================================================================-->
         <div id="back-drop"></div>
 
-        <!-- =================================================================================================================
+        <!-- ==================================================================================================================
         Main content of the homepage / landing page is displayed inside <main>...</main>
-        ===================================================================================================================-->
+        ====================================================================================================================-->
         <main>
             <section class="org-info">
 
-                <!-- =========================================================================================================
+                <!-- ==========================================================================================================
                 The introductary text container seen beside (left) of the loop video is coded here
-                ===========================================================================================================-->
-                <div class="org-text">
-                    <h1>Elevate Your Brand with the Magic Trio: </h1>
-                    <div class="org-imp-txt">
+                ============================================================================================================-->
+                <div class="org-text-container">
+                    <div class="org-text">
+                        <h1>Elevate Your Brand with the Magic Trio: </h1>
+                        <div class="org-imp-txt">
 
-                        <!-- =================================================================================================
-                        Three major services shown in horizontal line is coded here
-                        ===================================================================================================-->
-                        <span class="org-text-main">Stunning Illustrations</span>
-                        <span class="org-text-main">
-                            <!-- =============================================================================================
-                            Here + is added in both (left and right) side of the text so show that all three words is 
-                            separated by + sign (because of illustration according to design). 
-                            ===============================================================================================-->
+                            <!-- ==============================================================================================
+                            Three major services shown in horizontal line is coded here
+                            ================================================================================================-->
+                            <span class="org-text-main">Stunning Illustrations</span>
                             <span class="org-text-plus">+</span>
-                                Fluid animation
+                            <span class="org-text-main">
+                                <!-- ==========================================================================================
+                                Here + is added in both (left and right) side of the text so show that all three words is 
+                                separated by + sign (because of illustration according to design). 
+                                ============================================================================================-->
+                                    Fluid animation
+                            </span>
                             <span class="org-text-plus">+</span>
-                        </span>
-                        <span class="org-text-main">Marketing Brilliance</span>
+                            <span class="org-text-main">Marketing Brilliance</span>
+                        </div>
+                    </div>
+                    <div class="org-img">
+
+                        <!-- ==================================================================================================
+                        Instead of using the video from YouTube we use it directly (.mp4) because we were unable to make the video
+                        looping continuously from the YouTube (https://www.youtube.com/watch?v=WAjCkNM_tZ4).
+                        The video now, will be autoplay, loop for infinite times, and is muted. if the brouser doesn't support .mp4
+                        file then the text written there ("Your b..... tag.") is displayed to user.
+                        playsinline and poster to work for ios devices
+                        =====================================================================================================-->
+                        <video autoplay loop muted playsinline poster="/assets/images/video_thumbnails/Home/loop_video.svg" src="/assets/images/loop video.mp4">
+                            <source src="/assets/images/loop video.mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
-                <div class="org-img">
-
-                    <!-- =================================================================================================
-                    Instead of using the video from YouTube we use it directly (.mp4) because we were unable to make the video
-                    looping continuously from the YouTube.
-                    The video now, will be autoplay, loop for infinite times, and is muted. if the brouser doesn't support .mp4
-                    file then the text written there ("Your b..... tag.") is displayed to user.
-                    ===================================================================================================-->
-                    <video autoplay loop muted playsinline poster="/assets/images/video_thumbnails/Home/loop_video.svg" src="/assets/images/loop video.mp4">
-                        <source src="/assets/images/loop video.mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <!-- <iframe width="949" height="534" src="https://www.youtube.com/embed/WAjCkNM_tZ4?rel=0?version=3&autoplay=1&controls=0&&showinfo=0&mute=1&loop=1" title="Animation and Motion Design Showreel 2023 | Simplifying the Complex with Stunning Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                </div>
                 <div class="org-text-info">
+
+                    <!-- =======================================================================================================
+                    This div contains the play button image and a "watch video" text, and when this div is clicked it opens the 
+                    video (from youtube) inside same page making the <div id="back-drop"></div> (above in line 128) background 
+                    semi-black transparent. works with the javascript file located in (/assets/js/video-open-close-home.js)
+                    =========================================================================================================-->
                     <div class="org-text-icon why-video">
                         <img src="/assets/images/background/watch-video.svg" alt="why video">
                         <p>watch video</p>
                     </div>
+
+                    <!-- =======================================================================================================
+                    When user clicks this <a ...>...</a>, it will go to the upwork page of Bikash Makaju, Co-Founder of Fastblur
+                    Production in new tab
+                    =========================================================================================================-->
                     <a class="org-text-icon" href="https://www.upwork.com/freelancers/bikashmakaju" target="_blank">
                         <img src="/assets/images/background/up-work.svg" alt="see our work in upwork">
                         <p>300+ Projects and <br>
@@ -183,89 +196,116 @@ section except favicon, and title
                     <div class="org-text-icon why-video">
                         <p><span class="org-total-project">1000+</span> video projects</p>
                     </div>
-                    <!-- <div class="org-icon-desc"></div> -->
                 </div>
                 </div>
-                <!-- Messenger Chat plugin Code -->
+            </section>
+
+            <!-- ===============================================================================================================
+            This a tag is only visible for the mobile view up to max-width of 600px and the say hello btn in navigation
+            is hidden at that time.
+            =================================================================================================================-->
+            <a class="nav-btn" href="/assets/Internal-pages/sayHello.html"><span class="nav-btn-content">Say hello</span></a>
+
+            <!-- ===============================================================================================================
+            This tag is for the messenger chat box plugin and is given by the meta itself after configuring some settings. 
+            Just like as (https://www.youtube.com/watch?v=uPa9AliaG3E)
+            =================================================================================================================-->
             <div id="fb-root"></div>
 
             <!-- Your Chat plugin code -->
-            <div id="fb-customer-chat" class="fb-customerchat">
-            </div>
-
+            <div id="fb-customer-chat" class="fb-customerchat"></div>
+            <!-- ===============================================================================================================
+            This is the javascript tag for the messenger plugin
+            =================================================================================================================-->
             <script>
-            var chatbox = document.getElementById('fb-customer-chat');
-            chatbox.setAttribute("page_id", "102684859340338");
-            chatbox.setAttribute("attribution", "biz_inbox");
+                var chatbox = document.getElementById('fb-customer-chat');
+                chatbox.setAttribute("page_id", "102684859340338");
+                chatbox.setAttribute("attribution", "biz_inbox");
+
+                // <!-- Your SDK code -->
+                window.fbAsyncInit = function() {
+                    FB.init({
+                    xfbml            : true,
+                    version          : 'v17.0'
+                    });
+                };
+
+                (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
             </script>
 
-            <!-- Your SDK code -->
-            <script>
-            window.fbAsyncInit = function() {
-                FB.init({
-                xfbml            : true,
-                version          : 'v17.0'
-                });
-            };
+            <!-- ===============================================================================================================
+            This section is for video that is available in the index page / landing page and if we want to add or edit the 
+            videos of this section then image thumbnail can be changed or edited through the below code and for the video that 
+            appears need to be edit/ add through the javascript (which is in the location [/assets/js/video-open-close-home.js])
+            =================================================================================================================-->
+            <section class="r-work">
+                <h1>Our Recent Works</h1>
 
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-            </script>
-                </section>
-                <a class="nav-btn" href="/assets/Internal-pages/sayHello.html"><span class="nav-btn-content">Say
-                    hello</span></a>
-                <section class="r-work">
-                    <h1>Our Recent Works</h1>
-                    
-                    <div class="r-work-videos">
-                        <div class="video">
-                            <img src="/assets/images/video_thumbnails/Home/video-1.svg" alt="Corporate Fitness">
-                        </div>
-                        <div class="video">
-                            <img src="/assets/images/video_thumbnails/Home/video-2.svg" alt="Smart City">
-                        </div>
-                        <div class="video">
-                            <img src="/assets/images/video_thumbnails/Home/video-3.svg" alt="Cribl">
-                        </div>
-                        <div class="video">
-                            <img src="/assets/images/video_thumbnails/Home/video-4.svg" alt="WarmFuzzies">
-                        </div>
-                        <div class="video">
-                            <img src="/assets/images/video_thumbnails/Home/video-5.svg" alt="Pantomath">
-                        </div>
-                        <div class="video">
-                            <img src="/assets/images/video_thumbnails/Home/video-6.svg" alt="DispatchPro">
-                        </div>
-                        <div class="video">
-                            <img src="/assets/images/video_thumbnails/Home/video-7.svg" alt="Zipcan">
-                        </div>
-                        <div class="video">
-                            <img src="/assets/images/video_thumbnails/Home/video-8.svg" alt="Osaseva">
-                        </div>
-                        <div class="video">
-                            <img src="/assets/images/video_thumbnails/Home/video-9.svg" alt="Soundtrace">
-                        </div>
+                <!-- ===========================================================================================================
+                Add alternate text (alt) in the <img ..>, by using javascript (/assets/js/video-title-generator.js) it is 
+                displaying the name of particular video when hovered in the div.video [here . indicates class]
+                Here img is for the thumbnail and actual video link should need to in [/assets/js/video-open-close-home.js]
+                Note : this js file is making a iframe and appending it inside <div id="back-drop"></div> (line 128)
+                =============================================================================================================--> 
+                <div class="r-work-videos">
+                    <div class="video">
+                        <img src="/assets/images/video_thumbnails/Home/video-1.svg" alt="Corporate Fitness">
                     </div>
-                    <!-- <section id="display-container">
-                        <div class="display-video"></div>
-                    </section> -->
-                </section>
+                    <div class="video">
+                        <img src="/assets/images/video_thumbnails/Home/video-2.svg" alt="Smart City">
+                    </div>
+                    <div class="video">
+                        <img src="/assets/images/video_thumbnails/Home/video-3.svg" alt="Cribl">
+                    </div>
+                    <div class="video">
+                        <img src="/assets/images/video_thumbnails/Home/video-4.svg" alt="WarmFuzzies">
+                    </div>
+                    <div class="video">
+                        <img src="/assets/images/video_thumbnails/Home/video-5.svg" alt="Pantomath">
+                    </div>
+                    <div class="video">
+                        <img src="/assets/images/video_thumbnails/Home/video-6.svg" alt="DispatchPro">
+                    </div>
+                    <div class="video">
+                        <img src="/assets/images/video_thumbnails/Home/video-7.svg" alt="Zipcan">
+                    </div>
+                    <div class="video">
+                        <img src="/assets/images/video_thumbnails/Home/video-8.svg" alt="Osaseva">
+                    </div>
+                    <div class="video">
+                        <img src="/assets/images/video_thumbnails/Home/video-9.svg" alt="Soundtrace">
+                    </div>
+                </div>
                 <section class="homepage-join">
                     <a href="/assets/Internal-pages/portfolio.html"><button>Entire Works</button></a><br>
                     <h3>Search hundreds of videos and get inspiration for your next project.</h3>
                 </section>
         </main><br>
+
+        <!-- ===============================================================================================================
+        This section is for the client photography, now there is only one image that has all the clients logo featured in,
+        if you want to add more images then you can adjust it in the css file located in (/assets/css/style.css)
+        =================================================================================================================-->
         <section class="clients">
             <img src="/assets/images/background/client.svg" alt="clients">
         </section>
         
+        <!-- ===============================================================================================================
+        This is the footer section 
+        =================================================================================================================-->
         <footer>
             <div class="footer-left">
+
+                <!-- =======================================================================================================
+                Do not try to mess up with the layout, if you want then you need to do manually form the external file css 
+                located in (/assets/css/style.css)
+                =========================================================================================================-->
                 <div class="footer-row footer-img-1">
                     <div class="footer-img foot-img-1">
                         <img src="/assets/images/background/footer-1.svg" alt="our Illustrations">
@@ -288,21 +328,61 @@ section except favicon, and title
             </div>
             <div class="footer-right">
                 <h3>Ready to make a video?</h3>
+
+                <!-- =======================================================================================================
+                This link work same as the say hello btn that is in the navigation bar
+                =========================================================================================================-->
                 <a href="/assets/Internal-pages/sayHello.html" class="s-hello">Say hello</a>
                 <div class="footer-org-detail">
+
+                    <!-- ===================================================================================================
+                    If you want to add or delete the organization detail then do it within the <p> .. </p> and add <br> for 
+                    for line breaking
+                    =====================================================================================================-->
                     <p>Fastblur Productions<br>
                         Banepa, Nepal <br>
-                        Contact No: <a href="tel:+977-9841261904" class="tel-cel">+977-9841261904</a></p>
+
+                        <!-- ===============================================================================================
+                        here href (hypertext refrence) is assigned "tel:+977-9841261904", this means whenever the user 
+                        clicks the number in either cell phone, or tablet or desktop (includes laptops and tv's) than it 
+                        will open dial pad (if clicked in cell phone device), and similar app for calling is open if other
+                        devices.
+                        Note: If you want to change the number then do not forget to change the number in the href (change 
+                        only numbers) and inside <a>..</a>
+                        =================================================================================================-->
+                        Contact No: <a href="tel:+977-9841261904" class="tel-cel">+977-9841261904</a>
+                    </p>
                     <div class="social-icons">
                         <div class="icon">
-                            <a href="https://www.youtube.com/channel/UCVbUcyW5jR4kA77uS28ZAhg/videos"><i
-                                    class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.facebook.com/Fastblurproductions"><i
-                                    class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/fastblur-productions/"><i
-                                    class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://twitter.com/Fastblurpro"><i class="fa-brands fa-twitter"></i></a>
+
+                            <!-- =============================================================================================
+                            If you want to further add or remove the links and to other website then make sure to do 
+                            similarly as below href will contain the link where you want your user to move to.
+                            here <i..></i> is used to display the fontawesome icons and this icons is only available
+                            online (line 41)
+                            ===============================================================================================-->
+                            <a href="https://www.youtube.com/channel/UCVbUcyW5jR4kA77uS28ZAhg/videos">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="https://www.facebook.com/Fastblurproductions">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <!-- =============================================================================================
+                            here href is referring to # means no-were to go stay on same page, it is there because there is 
+                            no instagram account given by Fastblur Production. 
+                            If anytime in future the link is given then kindly past the link instead of # below and remove 
+                            this section comment.
+                            ===============================================================================================-->
+                            <a href="#"> 
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/fastblur-productions/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com/Fastblurpro">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -310,10 +390,15 @@ section except favicon, and title
         </footer>
     </body>
 
-<script src="/assets/js/nav-animation.js"></script>
-<script src="/assets/js/video-open-close-home.js"></script>
-<script src="/assets/js/watch-video-top.js"></script>
-<script src="/assets/js/video-title-generator.js"></script>
-<script src="/assets/js/script.js"></script>
+    <!-- =====================================================================================================================
+    All the javascript file that is requir to run this page smoothly is added/linked here and do not remove any script tag, if
+    you want to add some more features in this page that requires js then please add that script below all the scripts tag and
+    above the </html> tag.
+    ========================================================================================================================-->
+    <script src="/assets/js/nav-animation.js"></script>
+    <script src="/assets/js/video-open-close-home.js"></script>
+    <script src="/assets/js/watch-video-top.js"></script>
+    <script src="/assets/js/video-title-generator.js"></script>
+    <script src="/assets/js/script.js"></script>
 
 </html>

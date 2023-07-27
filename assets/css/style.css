@@ -148,20 +148,27 @@ nav ul li:hover:not(.nav-btn):before {
 main {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  /* border: 2px solid blue; */
 }
 
 section.org-info {
   display: grid;
-  grid-template-areas: "main-homepage main-homepage";
-  justify-content: space-between;
-  height: 85vh;
+  justify-content: center;
   align-items: center;
-  margin: 0 5.4375em;
-  flex-wrap: wrap;
+  grid-template-areas: "main-homepage main-homepage";
+  height: max(85vh,531px);
+  border: 2px solid red;
+  padding: 0 90px;
 }
-
+.org-text-container {
+  display: flex;
+  gap: 23px;
+  justify-content: space-between;
+  width: 100%;
+}
 .org-info > div {
-  grid-area: "main-homepage";
+  /* grid-area: "main-homepage"; */
 }
 
 .org-info div:nth-child(1),
@@ -174,13 +181,13 @@ section.org-info {
 }
 
 section .org-text {
-  max-width: 40em;
+  max-width: 42em;
 }
 
 section .org-text h1 {
   color: #270063;
   margin: 0 0 0.4em 0;
-  font-size: 50px;
+  font-size: 54px;
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 800;
@@ -201,7 +208,7 @@ section .org-text h1 {
 
 .org-text-plus {
   font-family: var(--primary-font);
-  position: absolute;
+  /* position: absolute; */
   font-style: normal;
   font-weight: 800;
   font-size: 45px;
@@ -216,19 +223,9 @@ section .org-text h1 {
   transform: rotate(180deg);
 }
 
-.org-text-main .org-text-plus:nth-child(1) {
-  top: 0;
-  left: -1.4em;
-}
-
-.org-text-main .org-text-plus:nth-child(2) {
-  top: 0;
-  right: -1.4em;
-}
-
 .org-imp-txt {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .org-imp-txt .org-text-main:nth-child(2) {
@@ -307,7 +304,7 @@ a.org-text-icon {
   border-radius: 30px;
   overflow: hidden;
   max-height: 21em;
-  max-width: 37.375em;
+  max-width: 36.375em;
 }
 
 .org-img video {
@@ -792,16 +789,6 @@ footer .icon a {
     gap: 1.4em;
   }
 
-  .org-text-main .org-text-plus:nth-child(1) {
-    top: -1.3em;
-    left: 1.4em;
-  }
-
-  .org-text-main .org-text-plus:nth-child(2) {
-    bottom: -1.3em;
-    right: 1.4em;
-  }
-
   .org-text-main {
     text-align: center;
     margin: 0.7em auto;
@@ -871,18 +858,6 @@ footer .icon a {
   }
 }
 
-@media (max-width: 600px) and (min-width: 361px) {
-  .org-text-main .org-text-plus:nth-child(1) {
-    top: 0.2em;
-    left: -0.7em;
-  }
-
-  .org-text-main .org-text-plus:nth-child(2) {
-    top: 0.2em;
-    right: -0.4em;
-  }
-}
-
 @media (max-width: 600px) {
   section.org-info {
     height: auto;
@@ -904,11 +879,6 @@ footer .icon a {
     font-size: 25px;
     width: 12em;
     margin: auto;
-  }
-
-  .org-text-main .org-text-plus {
-    font-size: 25px;
-    font-weight: 600;
   }
 
   .org-text-main {
