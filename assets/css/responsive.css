@@ -1,0 +1,595 @@
+/*==================================================
+For all the  Mobile Devices
+==================================================*/
+@media (max-width:600px) { /*20px*/
+
+    /*----------------------------------------------
+    For Navigation Bar
+    ----------------------------------------------*/
+    nav {
+        margin: 13px 0;
+        padding: 10px 20px 0 20px;
+        z-index: 4;
+    }
+
+    /*----------------------------------------------
+    Brand Logo
+    ----------------------------------------------*/
+    nav .nav-logo img {
+        height: 34px;
+        width: 94px;
+    }
+
+    /*----------------------------------------------
+    For the say hello btn
+    ----------------------------------------------*/
+    .nav-btn {
+        display: none;
+    }
+
+    /*----------------------------------------------
+    For Hamburger menu
+    ----------------------------------------------*/
+    .nav-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    /*----------------------------------------------
+    For navigation items
+    ----------------------------------------------*/
+    nav.sticky .nav-item {
+        top: 50.4px!important;
+        background-color: var(--scroll-navigation-background);
+    }
+    .nav-item {
+        z-index: 1;
+        display: none;
+        flex-direction: column;
+        gap: 2em;
+        background-color: #fff;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: 37.4px;
+        left: 0;
+        padding: 12px 20px;
+    }
+    .nav-item a {
+        width: 100%;
+    }
+    .nav-item a li {
+        text-align: left;
+        font-weight: bold;
+    }
+    /*----------------------------------------------
+    Main content of landing page
+    ----------------------------------------------*/
+    main {
+        padding:  0 20px;
+    }
+    section .org-text h1 {
+        font-size: 25px;
+        text-align: center;
+        /* width: 266px; */
+        /* margin: auto; */
+    }
+    .org-text-container {
+        flex-direction: column;
+    }
+    .org-text {
+        width: 100%;
+    }
+    .org-text-main {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .org-text-plus {
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .org-img video{
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .org-text-icon {
+        flex-direction: column;
+        font-size: 10px;
+        text-align: center;
+        height: 100%;
+        gap: 12px;
+    }
+    .org-text-icon p{
+        text-align: center;
+        font-size: 10px;
+        font-weight: 400;
+      }
+    .org-total-project {
+        font-size: 23px;
+    }
+    .org-text-info {
+        margin: 17px 0;
+    }
+
+    /*----------------------------------------------
+    Videos of landing page
+    ----------------------------------------------*/
+    .r-work {
+        margin: 66px 0 6px 0;
+    }
+    #home .r-work h1 {
+        font-size: 35px;
+    }
+    .r-work-videos {
+        margin: 25px -20px;
+        grid-template-areas: "video";
+    }
+    .homepage-join h3 {
+        font-size: 14px;
+        margin: 0.0625em 0;
+        line-height: 120.5%;
+    }
+    .homepage-join button {
+        font-size: 20px;
+        font-weight: 400;
+        padding: 10px 11px;
+    }
+    .r-work-videos .video {
+        height: 203px;
+    }
+    #display-container .display-video iframe {
+        height: 27vh;
+        width: 82.19vw;
+        aspect-ratio: 3/4;
+    }
+    /*----------------------------------------------
+    Foooter
+    ----------------------------------------------*/
+    footer {
+        grid-template-areas: "footer";
+        flex-wrap: wrap;
+        align-items: flex-end;
+        padding: 16px 12px 12px 12px; 
+        width: 100%;
+    }
+    .footer-row,
+    .footer-left {
+        justify-content: center;
+        gap: 12px;
+    }
+    .footer-row {
+        width: calc(100vw - 24px);
+    }
+    .footer-img {
+        height: 79px;
+    }
+    .footer-img.foot-img-1 {
+        width:50%;
+    }
+      
+    .footer-img.foot-img-2 {
+        width:50%;
+    }
+      
+    .footer-img.foot-img-3 {
+        width: 25%;
+    }
+      
+    .footer-img.foot-img-4 {
+        width: 50%;
+    }
+      
+    .footer-img.foot-img-5 {
+        width: 25%;
+    }
+    .footer-right h3 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 99.5%;
+        width: 181px;
+    }
+    .footer-right a.s-hello {
+        padding: 15px 43px;
+        font-size: 20px;
+        font-weight: 500;
+        border: 5px solid var(--font-white);
+    }
+    .footer-org-detail .social-icons .icon i {
+        font-size: 22px;
+    }
+    .footer-org-detail .social-icons .icon {
+        gap: 43px;
+    }
+}
+
+/*==================================================
+For all the  Tablet Devices
+==================================================*/
+@media (max-width:1200px) and (min-width:600px) { /*55px*/
+    body {
+        overflow: auto;
+    }
+
+    /*----------------------------------------------
+    For Navigation Bar
+    ----------------------------------------------*/
+    nav {
+        margin: 15px 0;
+        padding: 11.25px 55px ; /*(23+29.5)/2 and (20+90)/2*/
+    }
+    nav.sticky .nav-item {
+        top: 72.2px!important;
+        background-color: var(--scroll-navigation-background);
+    }
+    .nav-item {
+        position: fixed;
+        z-index: 1;
+        display: none;
+        flex-direction: column;
+        gap: 2em;
+        background-color: #fff;
+        height: 100vh;
+        width: 100vw;
+        top: 78px;
+        left: 0;
+        padding: 12px 57px;
+    }
+    .nav-item a {
+        width: 100%;
+    }
+    .nav-item a li {
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /*----------------------------------------------
+    Brand Logo
+    ----------------------------------------------*/
+    nav .nav-logo img {
+        height: 42px;
+        width: 114.5px;
+    }
+
+    /*----------------------------------------------
+    Hovering into nav items gives the underline
+    ----------------------------------------------*/
+    nav ul li:hover:not(.nav-btn):before,
+    nav ul li:hover:not(.selected):before {
+        content: "";
+        height: 0.2em;
+        width: 100%;
+        position: absolute;
+        bottom: -0.325em;
+        background: var(--primary-red);
+    }
+
+    /*----------------------------------------------
+    For the say hello btn
+    ----------------------------------------------*/
+    .nav-btn {
+        width: 165px;
+    }
+    .nav-btn-mobile {
+        display: none;
+    }
+
+    /*----------------------------------------------
+    For Hamburger menu
+    ----------------------------------------------*/
+    .nav-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    /*----------------------------------------------
+    For navigation items
+    ----------------------------------------------*/
+    .nav-item {
+        display: none;
+    }
+
+    /*----------------------------------------------
+    Main content of landing page
+    ----------------------------------------------*/
+    main {
+        padding:  0 55px;
+    }
+    section .org-text h1 {
+        font-size: 37.5px;
+    }
+    .org-text-main {
+        font-size: 16.5px;
+        font-weight: 500;
+    }
+    .org-text-plus {
+        font-weight: 700;
+        font-size: 35px;
+    }
+    .org-img video{
+        border-radius: 25px;
+        width: calc(50vw - 55px);
+        height: auto;
+    }
+    .org-info{
+        margin: 74px 0 ;
+    }
+    .org-total-project {
+        font-size: 37px;
+    }
+    .org-text-info {
+        margin-top: calc((88px + 17px) / 2);
+    }
+    .org-text-icon {
+        flex-direction: column;
+    }
+
+    /*----------------------------------------------
+    Videos of landing page
+    ----------------------------------------------*/
+    #home .r-work h1 {
+        font-size: 47.5px;
+    }
+    .r-work-videos {
+        margin: 25px -55px;
+        grid-template-areas: "video video";
+    }
+    .homepage-join h3 {
+        font-size: 22px;
+        margin: 1.0625em 0;
+        line-height: 120.5%;
+    }
+    .homepage-join button {
+        font-size: 25px;
+        font-weight: 500;
+        padding: 12.655px 12.5px;
+    }
+    .r-work-videos .video {
+        height: 234px;
+    }
+    #display-container .display-video iframe {
+        height: 47vh;
+        width: 80.5vw;
+        aspect-ratio: 3/4;
+    }
+
+    /*----------------------------------------------
+    Foooter
+    ----------------------------------------------*/
+    footer {
+        grid-template-areas: "footer";
+        flex-wrap: wrap;
+        align-items: flex-end;
+        padding: 22.5px 18.5px 18.5px 18.5px;
+        width: 100%;
+    }
+    .footer-row,
+    .footer-left {
+        gap: 18.5px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: calc(100vw - 37px);
+    }
+    .footer-img {
+        height: 140.96px;
+    }
+    .footer-img.foot-img-1 {
+        width:50%;
+    }
+      
+    .footer-img.foot-img-2 {
+        width:50%;
+    }
+      
+    .footer-img.foot-img-3 {
+        width: 25%;
+    }
+      
+    .footer-img.foot-img-4 {
+        width: 50%;
+    }
+      
+    .footer-img.foot-img-5 {
+        width: 25%;
+    }
+    .footer-right h3 {
+        font-size: 51.747px;
+        width: 234px;
+    }
+    .footer-right a.s-hello {
+        padding: 17.635px 52px;
+        font-size: 28.675px;
+        font-weight: 600;
+        border: 6.857px solid var(--font-white);
+    }
+    .footer-org-detail .social-icons .icon i {
+        font-size: 29px;
+    }
+    .footer-org-detail .social-icons .icon {
+        gap: 49.82px;
+    }
+}
+
+/*==================================================
+For all the  Desktop Devices
+==================================================*/
+@media (min-width:1200px) { /*90px*/
+    body {
+        overflow: auto;
+    }
+
+    /*----------------------------------------------
+    For Navigation Bar
+    ----------------------------------------------*/
+    nav {
+        margin: 15px 0;
+        padding: 14.5px 90px;
+    }
+    
+    /*----------------------------------------------
+    Brand Logo
+    ----------------------------------------------*/
+    nav .nav-logo img {
+        height: 50px;
+        width: 135px;
+    }
+
+    /*----------------------------------------------
+    For the say hello btn
+    ----------------------------------------------*/
+    .nav-btn {
+        cursor: pointer;
+        width: 165px;
+    }
+    .nav-btn-mobile {
+        display: none;
+    }
+    .nav-btn-content:hover {
+        background: linear-gradient(-248.59deg, #1d30ad 12.5%, #8d2533 92.57%);
+        transition: background 1s ease-in-out;
+        transition-delay: 0.9s;
+    }
+
+    /*----------------------------------------------
+    For Hamburger menu
+    ----------------------------------------------*/
+    .nav-menu {
+        display: none;
+    }
+
+    /*----------------------------------------------
+    Main content of landing page
+    ----------------------------------------------*/
+    main {
+        padding:  0 90px;
+    }
+    section .org-text h1 {
+        font-size: 50px;
+    }
+    .org-text-main {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .org-text-plus {
+        font-weight: 800;
+        font-size: 45px;
+    }
+    .org-img video{
+        border-radius: 30px;
+        height: auto;
+        width: 598px;
+    }
+    .org-info{
+        margin: 40px 0;
+    }
+    .org-text-info {
+        margin-top: 88px;
+    }
+    .org-text-icon {
+        gap: 12.75px;
+        font-size: 15px;
+        align-items: center;
+    }
+    .org-text-icon p{
+        text-align: left;
+    }
+    .org-total-project {
+        font-size: 40px;
+    }
+    /*----------------------------------------------
+    Videos of landing page
+    ----------------------------------------------*/
+    .r-work {
+        margin: 83px 0 80px 0;
+    }
+    #home .r-work h1 {
+        font-size: 60px;
+    }
+    .r-work-videos {
+        margin: 25px -90px;
+        grid-template-areas: "video video video";
+    }
+    .homepage-join h3 {
+        font-size: 30px;
+        margin: 0.0625em 0;
+        line-height: 120.5%;
+    }
+    .homepage-join button {
+        font-size: 30px;
+        font-weight: 600;
+        padding: 15.31px 14px;
+    }
+    .r-work-videos .video {
+        height: 270px;
+    }
+
+    /*----------------------------------------------
+    Foooter
+    ----------------------------------------------*/
+    footer {
+        grid-template-areas: "footer footer";
+        flex-wrap: wrap;
+        align-items: flex-end;
+        padding: 29px 25px 25px 25px;
+        width: 100%;
+    }
+    .footer-row,
+    .footer-left {
+        gap: 25px;
+        justify-content: center;
+    }
+    .footer-left {
+        width: calc(60vw - 37.5px);;
+    }
+    .footer-right {
+        width: calc(40vw - 37.5px);
+    }
+    .footer-img {
+        height: 212.935px;
+    }
+    .footer-img.foot-img-1 {
+        width:50%;
+    }
+      
+    .footer-img.foot-img-2 {
+        width:50%;
+    }
+      
+    .footer-img.foot-img-3 {
+        width: 25%;
+    }
+      
+    .footer-img.foot-img-4 {
+        width: 75%;
+    }
+      
+    .footer-img.foot-img-5 {
+        width: 25%;
+    }
+    .footer-right h3 {
+        font-size: 63.495px;
+        width: 287px;
+    }
+    .footer-right a.s-hello {
+        padding: 20.27px 61.01px;
+        font-size: 37.35px;
+        font-weight: 700;
+        border: 8.715px solid var(--font-white);
+    }
+    .footer-org-detail .social-icons .icon i {
+        font-size: 36px;
+    }
+    .footer-org-detail .social-icons .icon i:hover {
+        color: #f0cc70e4;
+    }
+    .footer-org-detail .social-icons .icon {
+        gap: 56.65px;
+    }
+    #display-container .display-video iframe {
+        height: 75vh;
+        width: 65vw;
+        aspect-ratio: 3/4;
+    }
+}
