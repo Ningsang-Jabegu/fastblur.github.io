@@ -1,28 +1,65 @@
+<!-- =========================================================================================================================
+Declearing this document as html version 5 document
+===========================================================================================================================-->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fastblue - Blogs</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css"
-      integrity="sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="shortcut icon" href="/assets/images/Fastblur_Logos/FB Logo without text_Color.png" type="image/x-icon">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BG2EQ2D216"></script>
-  </head>
 
+<!-- =========================================================================================================================
+starting this document and the language used in this document is english and text is written from left
+to right
+===========================================================================================================================-->
+<html lang="en" dir="ltr">
+
+<!-- =========================================================================================================================
+The head section is only seen by browser's and no users sees the meta information provided inside this 
+section except favicon, and title
+===========================================================================================================================-->
+    <head>
+
+        <!-- ==================================================================================================================
+        meta tag for the different characters that other than the english alphabets (a-z), (A-Z) and number (0-9)
+        ======================================================================================================-->
+        <meta charset="UTF-8">
+
+        <!-- ==================================================================================================================
+        meta tag for the responsiveness of the website
+        ====================================================================================================================-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ==================================================================================================================
+        Title of the page
+        ====================================================================================================================-->
+        <title>Fastblue - Homepage</title>
+
+        <!-- ==================================================================================================================
+        Linking the external stylesheet custome
+        ====================================================================================================================-->
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/responsive.css">
+        <link rel="stylesheet" href="/assets/css/animation.css">
+
+        <!-- ==================================================================================================================
+        Linking the external stylesheet for the font-awesome icons used in footer (social media icons)
+        ====================================================================================================================-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- ==================================================================================================================
+        Link to FavIcon, that is the image seen in the tab bar of the browser
+        ====================================================================================================================-->
+        <link rel="shortcut icon" href="/assets/images/Fastblur_Logos/FB Logo without text_Color.png" type="image/x-icon">
+
+        <!-- ==================================================================================================================
+        This is google meta tag control the behavior of search engine crawling and indexing.
+        ====================================================================================================================-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BG2EQ2D216"></script>
+
+    </head>
+
+    <!-- ======================================================================================================================
+    The body section is contains all things that is visible by the website users. Anything written inside it
+    will be displayed in the browser.
+    ========================================================================================================================-->
   <body>
     <!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
@@ -96,84 +133,105 @@
     </section>
 
     
+<!-- ===============================================================================================================
+        This is the footer section 
+        =================================================================================================================-->
+        <footer>
+          <div class="footer-left">
 
-    <footer>
-      <div class="footer-left">
-        <div class="footer-row footer-img-1">
-          <div class="footer-img foot-img-1">
-            <img
-              src="/assets/images/background/footer-1.svg"
-              alt="our Illustrations"
-              srcset=""
-            />
+              <!-- =======================================================================================================
+              Do not try to mess up with the layout, if you want then you need to do manually form the external file css 
+              located in (/assets/css/style.css)
+              =========================================================================================================-->
+              <div class="footer-row footer-img-1">
+                  <div class="footer-img foot-img-1">
+                      <img src="/assets/images/background/footer-1.svg" alt="our Illustrations">
+                  </div>
+                  <div class="footer-img foot-img-2">
+                      <img src="/assets/images/background/footer-2.svg" alt="our Illustrations">
+                  </div>
+              </div>
+              <div class="footer-row footer-img-2">
+                  <div class="footer-img foot-img-3">
+                      <img src="/assets/images/background/footer-3.svg" alt="our Illustrations">
+                  </div>
+                  <div class="footer-img foot-img-4">
+                      <img src="/assets/images/background/footer-4.svg" alt="our Illustrations">
+                  </div>
+                  <div class="footer-img foot-img-5">
+                      <img src="/assets/images/background/footer-5.svg" alt="our Illustrations">
+                  </div>
+              </div>
           </div>
-          <div class="footer-img foot-img-2">
-            <img
-              src="/assets/images/background/footer-2.svg"
-              alt="our Illustrations"
-              srcset=""
-            />
+          <div class="footer-right">
+              <h3>Ready to make a video?</h3>
+
+              <!-- =======================================================================================================
+              This link work same as the say hello btn that is in the navigation bar
+              =========================================================================================================-->
+              <a href="/assets/Internal-pages/sayHello.html" class="s-hello">Say hello</a>
+              <div class="footer-org-detail">
+
+                  <!-- ===================================================================================================
+                  If you want to add or delete the organization detail then do it within the <p> .. </p> and add <br> for 
+                  for line breaking
+                  =====================================================================================================-->
+                  <p>Fastblur Productions<br>
+                      Banepa, Nepal <br>
+
+                      <!-- ===============================================================================================
+                      here href (hypertext refrence) is assigned "tel:+977-9841261904", this means whenever the user 
+                      clicks the number in either cell phone, or tablet or desktop (includes laptops and tv's) than it 
+                      will open dial pad (if clicked in cell phone device), and similar app for calling is open if other
+                      devices.
+                      Note: If you want to change the number then do not forget to change the number in the href (change 
+                      only numbers) and inside <a>..</a>
+                      =================================================================================================-->
+                      Contact No: <a href="tel:+977-9841261904" class="tel-cel">+977-9841261904</a>
+                  </p>
+                  <div class="social-icons">
+                      <div class="icon">
+
+                          <!-- =============================================================================================
+                          If you want to further add or remove the links and to other website then make sure to do 
+                          similarly as below href will contain the link where you want your user to move to.
+                          here <i..></i> is used to display the fontawesome icons and this icons is only available
+                          online (line 41)
+                          ===============================================================================================-->
+                          <a href="https://www.youtube.com/channel/UCVbUcyW5jR4kA77uS28ZAhg/videos">
+                              <i class="fa-brands fa-youtube"></i>
+                          </a>
+                          <a href="https://www.facebook.com/Fastblurproductions">
+                              <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+
+                          <!-- =============================================================================================
+                          here href is referring to # means no-were to go stay on same page, it is there because there is 
+                          no instagram account given by Fastblur Production. 
+                          If anytime in future the link is given then kindly past the link instead of # below and remove 
+                          this section comment.
+                          ===============================================================================================-->
+                          <a href="#"> 
+                              <i class="fa-brands fa-instagram"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/company/fastblur-productions/">
+                              <i class="fa-brands fa-linkedin"></i>
+                          </a>
+                          <a href="https://twitter.com/Fastblurpro">
+                              <i class="fa-brands fa-twitter"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="footer-row footer-img-2">
-          <div class="footer-img foot-img-3">
-            <img
-              src="/assets/images/background/footer-3.svg"
-              alt="our Illustrations"
-              srcset=""
-            />
-          </div>
-          <div class="footer-img foot-img-4">
-            <img
-              src="/assets/images/background/footer-4.svg"
-              alt="our Illustrations"
-              srcset=""
-            />
-          </div>
-          <div class="footer-img foot-img-5">
-            <img
-              src="/assets/images/background/footer-5.svg"
-              alt="our Illustrations"
-              srcset=""
-            />
-          </div>
-        </div>
-      </div>
-      <div class="footer-right">
-        <h3>Ready to make a video?</h3>
-        <a href="/assets/Internal-pages/sayHello.html" class="s-hello"
-          >Say hello</a
-        >
-        <div class="footer-org-detail">
-          <p>
-            Fastblur Productions<br />
-            Banepa, Nepal <br />
-            Contact No:
-            <a href="tel:+977-9841261904" class="tel-cel">+977-9841261904</a>
-          </p>
-          <div class="social-icons">
-            <div class="icon">
-              <a
-                href="https://www.youtube.com/channel/UCVbUcyW5jR4kA77uS28ZAhg/videos"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
-              <a href="https://www.facebook.com/Fastblurproductions"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/fastblur-productions/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://twitter.com/Fastblurpro"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 
+  <!-- =====================================================================================================================
+  All the javascript file that is requir to run this page smoothly is added/linked here and do not remove any script tag, if
+  you want to add some more features in this page that requires js then please add that script below all the scripts tag and
+  above the </html> tag.
+  ========================================================================================================================-->
   <script src="/assets/js/nav-animation.js"></script>
   <script src="/assets/js/script.js"></script>
 </html>

@@ -1,16 +1,65 @@
+<!-- =========================================================================================================================
+Declearing this document as html version 5 document
+===========================================================================================================================-->
 <!DOCTYPE html>
+
+<!-- =========================================================================================================================
+starting this document and the language used in this document is english and text is written from left
+to right
+===========================================================================================================================-->
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fastblue - Portfolio</title>
-    <script type="module" src="/assets/js/video-open-close-portfolio.js"></script>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" integrity="sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="/assets/images/Fastblur_Logos/FB Logo without text_Color.png" type="image/x-icon">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BG2EQ2D216"></script>
-</head>
+
+<!-- =========================================================================================================================
+The head section is only seen by browser's and no users sees the meta information provided inside this 
+section except favicon, and title
+===========================================================================================================================-->
+    <head>
+
+        <!-- ==================================================================================================================
+        meta tag for the different characters that other than the english alphabets (a-z), (A-Z) and number (0-9)
+        ======================================================================================================-->
+        <meta charset="UTF-8">
+
+        <!-- ==================================================================================================================
+        meta tag for the responsiveness of the website
+        ====================================================================================================================-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ==================================================================================================================
+        Title of the page
+        ====================================================================================================================-->
+        <title>Fastblue - Portfolio</title>
+
+        <!-- ==================================================================================================================
+        Linking the external stylesheet custome
+        ====================================================================================================================-->
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/responsive.css">
+        <link rel="stylesheet" href="/assets/css/animation.css">
+
+        <!-- ==================================================================================================================
+        Linking the external stylesheet for the font-awesome icons used in footer (social media icons)
+        ====================================================================================================================-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- ==================================================================================================================
+        Link to FavIcon, that is the image seen in the tab bar of the browser
+        ====================================================================================================================-->
+        <link rel="shortcut icon" href="/assets/images/Fastblur_Logos/FB Logo without text_Color.png" type="image/x-icon">
+
+        <!-- ==================================================================================================================
+        This is google meta tag control the behavior of search engine crawling and indexing.
+        ====================================================================================================================-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BG2EQ2D216"></script>
+
+    </head>
+
+    <!-- ======================================================================================================================
+    The body section is contains all things that is visible by the website users. Anything written inside it
+    will be displayed in the browser.
+    ========================================================================================================================-->
 <body id="#portfolio">
     <!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
@@ -80,197 +129,109 @@
             <div id="whiteboardAnimation"></div>
             <div id="isometric"></div>
             <div id="softwareDemo"></div>
-            <!-- <div class="video" id="characterDriven">
-                <img src="/assets/images/video_thumbnails/Home/video-1.png" alt="LYFE" srcset="">
-            </div>
-            <div class="video" id="characterDriven">
-                <img src="/assets/images/video_thumbnails/Home/video-2.png" alt="Snoopy Cap" srcset="">
-            </div>
-            <div class="video" id="characterDriven">
-                <img src="/assets/images/video_thumbnails/Home/video-3.png" alt="Realest" srcset="">
-            </div>
-            <div class="video" id="characterDriven">
-                <img src="/assets/images/video_thumbnails/Home/video-4.png" alt="Soundtrace" srcset="">
-            </div>
-            <div class="video" id="characterDriven">
-                <img src="/assets/images/video_thumbnails/Home/video-5.png" alt="Warmfuzzies" srcset="">
-            </div>
-            <div class="video" id="characterDriven">
-                <img src="/assets/images/video_thumbnails/Home/video-6.png" alt="Rekenix" srcset="">
-            </div>
-            <div class="video" id="characterDriven">
-                <img src="/assets/images/video_thumbnails/Home/video-7.png" alt="Rekenix" srcset="">
-            </div>
-            <div class="video" id="characterDriven">
-                <img src="/assets/images/video_thumbnails/Home/video-8.png" alt="Brain Parlor" srcset="">
-            </div>
-            <div class="video" id="characterDriven">
-                <img src="/assets/images/video_thumbnails/Home/video-9.png" alt="Signathon" srcset="">
-            </div>
-        
-            <div class="video" id="motionGraphics">
-                <img src="https://docs.google.com/uc?id=12oPf9XK1wGlOYyZa_6ugM-gV84KPsFYl" alt="Cribl" srcset="">
-            </div>
-            <div class="video" id="motionGraphics">
-                <img src="https://docs.google.com/uc?id=1Mog0PdwZWrgfw6WAAbaR5bqsPyMx1Jbn" alt="Roche" srcset="">
-            </div>
-            <div class="video" id="motionGraphics">
-                <img src="https://docs.google.com/uc?id=1gYU-k9WJuIMYlO7u0v3j3R1H_TsegQ0j" alt="Hygiene" srcset="">
-            </div>
-            <div class="video" id="motionGraphics">
-                <img src="https://docs.google.com/uc?id=1sUSBOMB33U8fydXMKoJP7WpPt_VmUVRz" alt="Hyperguest" srcset="">
-            </div>
-            <div class="video" id="motionGraphics">
-                <img src="https://docs.google.com/uc?id=1xwlBhZIYVaWXrSQClbo7PygCuJICwHr4" alt="Cribl" srcset="">
-            </div>
-            <div class="video" id="motionGraphics">
-                <img src="https://docs.google.com/uc?id=10PigNk_Dk8SFUP6nqf2t-Abs2b1QFpuy" alt="Dispatch Pro" srcset="">
-            </div>
-            <div class="video video-hide" id="motionGraphics" initial_hide>
-                <img src="https://docs.google.com/uc?id=1kL2_y-OCkBkN1t9QkVZdnpiatt04Tx0C" alt="Vudini" srcset="">
-            </div>
-            <div class="video video-hide" id="motionGraphics" initial_hide>
-                <img src="https://docs.google.com/uc?id=1LOaZeTL8QYIR6FXHuMyyUPyWatseZpZc" alt="Flex Charging" srcset="">
-            </div>
-            <div class="video video-hide" id="motionGraphics" initial_hide>
-                <img src="https://docs.google.com/uc?id=1YTSqnCvUZJ_CvbSAAQ5XHWWOsYPYR0Zk" alt="Charity token" srcset="">
-            </div>
-        
-            <div class="video video-hide" id="whiteboardAnimation" initial_hide> 
-                <img src="https://docs.google.com/uc?id=15NLKed1OULbAj4EPOFkgyJXQpg80sbEZ" alt="Mentor Ability" srcset="">
-            </div>
-            <div class="video video-hide" id="whiteboardAnimation" initial_hide>
-                <img src="https://docs.google.com/uc?id=1oJhMqkw4MjGo9PIDohjauw9h1VsDvWFN" alt="Stigg Security" srcset="">
-            </div>
-            <div class="video video-hide" id="whiteboardAnimation" initial_hide>
-                <img src="https://docs.google.com/uc?id=15LP1YIEzp_ZCSxXunmGPlS1EC3kRKtA2" alt="Libido" srcset="">
-            </div>
-            <div class="video video-hide" id="whiteboardAnimation" initial_hide>
-                <img src="https://docs.google.com/uc?id=1ZnAdOcTdxnuMYwWLypATgYW-8gFqPwFn.png" alt="IDD Safe" srcset="">
-            </div>
-            <div class="video video-hide" id="whiteboardAnimation" initial_hide>
-                <img src="https://docs.google.com/uc?id=1rbs_x3Qgb-arJEWEM0gWcEwY10tpcB9z" alt="The Silk Route" srcset="">
-            </div>
-            <div class="video video-hide" id="whiteboardAnimation" initial_hide>
-                <img src="https://docs.google.com/uc?id=1XvdhphG7phL9YlgcjZ-vmfTqDQ7Xc8WF" alt="Gateway Employment" srcset="">
-            </div>
-            <div class="video video-hide" id="whiteboardAnimation" initial_hide>
-                <img src="https://docs.google.com/uc?id=1XiuQV2d9Fbdkg1a4Wm8YtUANbPRzDaz9" alt="Sturdy" srcset="">
-            </div>
-            <div class="video video-hide" id="whiteboardAnimation" initial_hide>
-                <img src="https://docs.google.com/uc?id=19e5ti8IslBr6cO0ALGtyIRVIUiUA7BJD" alt="Superjeweler" srcset="">
-            </div>
-            <div class="video video-hide" id="whiteboardAnimation" initial_hide>
-                <img src="https://docs.google.com/uc?id=138VG1M8E9bdmTin_cgZM9FJaTJIYjiKy" alt="EU Whiteboard" srcset="">
-            </div>
-
-            <div class="video video-hide" id="isometric" initial_hide>
-                <img src="https://docs.google.com/uc?id=1pmAqoQsFkXCDRtnpsOPVesg5vkuilUn5" alt="KFC Aus" srcset="">
-            </div>
-            <div class="video video-hide" id="isometric" initial_hide>
-                <img src="https://docs.google.com/uc?id=19zJ7uSEUevvqiz8f0QcRnAusi_GobYHx" alt="Pahtomath" srcset="">
-            </div>
-            <div class="video video-hide" id="isometric">
-                <img src="https://docs.google.com/uc?id=15W992ZdmK67lAjRfTCAU-iATSFVVQ_kh" alt="Supplime" srcset="">
-            </div>
-            <div class="video video-hide" id="isometric" initial_hide>
-                <img src="https://docs.google.com/uc?id=12uWc3xQpttPT7dFV-mtvEdZsnqreiHt8" alt="Praqio" srcset="">
-            </div>
-            <div class="video video-hide" id="isometric" initial_hide>
-                <img src="https://docs.google.com/uc?id=1IWaQ6g2bvBVbH-W36vsbyXmNuKjFsDbN" alt="Atidot" srcset="">
-            </div>
-            <div class="video video-hide" id="isometric" initial_hide>
-                <img src="https://docs.google.com/uc?id=1O59Oew9vd4bWK23NRfPudsF8BxPHl34h" alt="Club" srcset="">
-            </div>
-            <div class="video video-hide" id="isometric" initial_hide>
-                <img src="https://docs.google.com/uc?id=1Yk_jPbJ_7-i0CUmd8Knmn-kzfzUAs6HA" alt="Rovjok" srcset="">
-            </div>
-            <div class="video video-hide" id="isometric" initial_hide>
-                <img src="https://docs.google.com/uc?id=1Cf0ZnEAdc5_hlmaPFKWGX_jE6Ev_1pwx" alt="MyLeanFactory" srcset="">
-            </div>
-            <div class="video video-hide" id="isometric" initial_hide>
-                <img src="https://docs.google.com/uc?id=1c_RTUONcSqyQurt-9AU-Xv5dqHmEe8sT" alt="Insightfull" srcset="">
-            </div>
-
-            <div class="video video-hide" id="softwareDemo" initial_hide>
-                <img src="https://docs.google.com/uc?id=1RwzjotKPIRwpOWTDSd9U7aXcmvMCyOTj" alt="Hi Touch" srcset="">
-            </div>
-            <div class="video video-hide" id="softwareDemo" initial_hide>
-                <img src="https://docs.google.com/uc?id=1LkyW0obb34B1FgElwgSmTisKyUJP92pb" alt="Draft Co." srcset="">
-            </div>
-            <div class="video video-hide" id="softwareDemo" initial_hide>
-                <img src="https://docs.google.com/uc?id=1IaVPgw97Xdn7NKckPzB1C9PtcZfwvyh4" alt="ProWriter" srcset="">
-            </div>
-            <div class="video video-hide" id="softwareDemo" initial_hide>
-                <img src="https://docs.google.com/uc?id=1hf9h4DloOGS_wT70bO-CmEGH0WoSFKRf" alt="LoTops" srcset="">
-            </div>
-            <div class="video video-hide" id="softwareDemo" initial_hide>
-                <img src="https://docs.google.com/uc?id=1-9ZZ7XM6N_PJRPZNx9ecMJfJPZeJJwFT" alt="Sign in" srcset="">
-            </div>
-            <div class="video video-hide" id="softwareDemo" initial_hide>
-                <img src="https://docs.google.com/uc?id=1_2EPHY1Y90VTgSY3uf2-Onr6vIybI47F" alt="zipcan" srcset="">
-            </div>
-            <div class="video video-hide" id="softwareDemo" initial_hide>
-                <img src="https://docs.google.com/uc?id=1ZkTWvyU0ewpq3VeSQwMRiEhcB8JMm6Hp" alt="Switch" srcset="">
-            </div>
-            <div class="video video-hide" id="softwareDemo" initial_hide>
-                <img src="https://docs.google.com/uc?id=18gJAMMBtiLhu14W6PKnAS1ac7OF1m1kN" alt="KOSA" srcset="">
-            </div>
-            <div class="video video-hide" id="softwareDemo" initial_hide>
-                <img src="https://docs.google.com/uc?id=1hLNnQLqfGjcSWxQQHbt0I2UX_mWJ1Gzb" alt="Corporate fitness" srcset="">
-            </div> -->
         </div>
-        <!-- <section id="display-container">
-            <div class="display-video"></div>
-        </section> -->
     </section>
     <button class="more-videos">More +</button>
     
-    <footer>
-        <div class="footer-left">
-            <div class="footer-row footer-img-1">
-                <div class="footer-img foot-img-1">
-                    <img src="/assets/images/background/footer-1.svg" alt="our Illustrations" srcset="">
+    <!-- ===============================================================================================================
+        This is the footer section 
+        =================================================================================================================-->
+        <footer>
+            <div class="footer-left">
+
+                <!-- =======================================================================================================
+                Do not try to mess up with the layout, if you want then you need to do manually form the external file css 
+                located in (/assets/css/style.css)
+                =========================================================================================================-->
+                <div class="footer-row footer-img-1">
+                    <div class="footer-img foot-img-1">
+                        <img src="/assets/images/background/footer-1.svg" alt="our Illustrations">
+                    </div>
+                    <div class="footer-img foot-img-2">
+                        <img src="/assets/images/background/footer-2.svg" alt="our Illustrations">
+                    </div>
                 </div>
-                <div class="footer-img foot-img-2">
-                    <img src="/assets/images/background/footer-2.svg" alt="our Illustrations" srcset="">
+                <div class="footer-row footer-img-2">
+                    <div class="footer-img foot-img-3">
+                        <img src="/assets/images/background/footer-3.svg" alt="our Illustrations">
+                    </div>
+                    <div class="footer-img foot-img-4">
+                        <img src="/assets/images/background/footer-4.svg" alt="our Illustrations">
+                    </div>
+                    <div class="footer-img foot-img-5">
+                        <img src="/assets/images/background/footer-5.svg" alt="our Illustrations">
+                    </div>
                 </div>
             </div>
-            <div class="footer-row footer-img-2">
-                <div class="footer-img foot-img-3">
-                    <img src="/assets/images/background/footer-3.svg" alt="our Illustrations" srcset="">
-                </div>
-                <div class="footer-img foot-img-4">
-                    <img src="/assets/images/background/footer-4.svg" alt="our Illustrations" srcset="">
-                </div>
-                <div class="footer-img foot-img-5">
-                    <img src="/assets/images/background/footer-5.svg" alt="our Illustrations" srcset="">
-                </div>
-            </div>
-        </div>
-        <div class="footer-right">
-            <h3>Ready to make a video?</h3>
-            <a href="/assets/Internal-pages/sayHello.html" class="s-hello">Say hello</a>
-            <div class="footer-org-detail">
-                <p>Fastblur Productions<br>
-                    Banepa, Nepal <br>
-                    Contact No: <a href="tel:+977-9841261904" class="tel-cel">+977-9841261904</a></p>
+            <div class="footer-right">
+                <h3>Ready to make a video?</h3>
+
+                <!-- =======================================================================================================
+                This link work same as the say hello btn that is in the navigation bar
+                =========================================================================================================-->
+                <a href="/assets/Internal-pages/sayHello.html" class="s-hello">Say hello</a>
+                <div class="footer-org-detail">
+
+                    <!-- ===================================================================================================
+                    If you want to add or delete the organization detail then do it within the <p> .. </p> and add <br> for 
+                    for line breaking
+                    =====================================================================================================-->
+                    <p>Fastblur Productions<br>
+                        Banepa, Nepal <br>
+
+                        <!-- ===============================================================================================
+                        here href (hypertext refrence) is assigned "tel:+977-9841261904", this means whenever the user 
+                        clicks the number in either cell phone, or tablet or desktop (includes laptops and tv's) than it 
+                        will open dial pad (if clicked in cell phone device), and similar app for calling is open if other
+                        devices.
+                        Note: If you want to change the number then do not forget to change the number in the href (change 
+                        only numbers) and inside <a>..</a>
+                        =================================================================================================-->
+                        Contact No: <a href="tel:+977-9841261904" class="tel-cel">+977-9841261904</a>
+                    </p>
                     <div class="social-icons">
                         <div class="icon">
-                            <a href="https://www.youtube.com/channel/UCVbUcyW5jR4kA77uS28ZAhg/videos"><i
-                                    class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.facebook.com/Fastblurproductions"><i
-                                    class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/fastblur-productions/"><i
-                                    class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://twitter.com/Fastblurpro"><i class="fa-brands fa-twitter"></i></a>
+
+                            <!-- =============================================================================================
+                            If you want to further add or remove the links and to other website then make sure to do 
+                            similarly as below href will contain the link where you want your user to move to.
+                            here <i..></i> is used to display the fontawesome icons and this icons is only available
+                            online (line 41)
+                            ===============================================================================================-->
+                            <a href="https://www.youtube.com/channel/UCVbUcyW5jR4kA77uS28ZAhg/videos">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="https://www.facebook.com/Fastblurproductions">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <!-- =============================================================================================
+                            here href is referring to # means no-were to go stay on same page, it is there because there is 
+                            no instagram account given by Fastblur Production. 
+                            If anytime in future the link is given then kindly past the link instead of # below and remove 
+                            this section comment.
+                            ===============================================================================================-->
+                            <a href="#"> 
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/fastblur-productions/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com/Fastblurpro">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
+
+    <!-- =====================================================================================================================
+    All the javascript file that is requir to run this page smoothly is added/linked here and do not remove any script tag, if
+    you want to add some more features in this page that requires js then please add that script below all the scripts tag and
+    above the </html> tag.
+    ========================================================================================================================-->
 
 <script src="/assets/js/nav-animation.js"></script>
 <script src="/assets/js/portfolio-video.js"></script>
