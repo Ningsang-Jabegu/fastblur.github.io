@@ -889,13 +889,12 @@ div.rating {
 .aboutUs {
   display: flex;
   flex-direction: column;
-  margin: 2em 0;
-  gap: 2em;
+  width: 100%;
 }
 
 .aboutUs-main {
   height: auto;
-  width: 100%;
+  width: 100vw;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -907,32 +906,36 @@ div.rating {
 }
 
 .aboutUs-text {
-  margin: 0 4em;
-  text-align: center;
+  /* margin: 0 4em; */
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .aboutUs-personal-container {
   display: grid;
-  grid-template-areas: "officials officials officials";
-  margin: 2em;
-  padding: 1em;
+  /* padding: 1em; */
   justify-content: center;
-  gap: 3em;
 }
 
-.aboutUs-personal-img {
-  grid-area: officials;
-  background: #d9d9d9;
-}
+
 
 .aboutUs-personal-box {
   flex-direction: column;
   display: flex;
 }
-
+.aboutUs-personal-img {
+  grid-area: officials;
+  background: #d9d9d9;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 .aboutUs-personal-img img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .aboutUs-personal-details {
@@ -950,10 +953,6 @@ div.rating {
   top: 0;
   left: 0;
   background: rgba(8, 75, 255, 0.2);
-}
-
-.aboutUs-personal-img {
-  position: relative;
 }
 
 div.blue-bg-img {
