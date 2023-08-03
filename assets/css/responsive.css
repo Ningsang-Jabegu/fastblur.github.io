@@ -731,6 +731,7 @@ For all the  Desktop Devices
         grid-template-areas: "1fr 1fr";
         width: 100%;
         gap: 30px;
+        margin: 0 80px;
     }
     .blog-thumbnail {
         height: auto;
