@@ -1046,14 +1046,8 @@ div.red-bg-img {
 section.blog-individual {
   display: flex;
   flex-direction: column;
-  margin: 118px auto;
-  gap: 70px;
-  max-width: 720px;
-  padding: 2em;
 }
 .blog-individual h1.blog-indivisual-title {
-  font-size: 55px;
-  font-weight: 700;
   font-weight: 700;
   line-height: 120%;
 }
@@ -1062,18 +1056,20 @@ section.blog-individual {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  /* font-size: 25px; */
   line-height: 1.3;
   font-weight: 400;
   gap: 1em;
+  /* text-align: justify; */
 }
 .blog-description ul,
 .blog-description ol {
-  margin: 0 1em;
+  margin: 0 25px;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
+.blog-description li::marker,
 .blog-sub-heading {
   font-weight: bold;
 }

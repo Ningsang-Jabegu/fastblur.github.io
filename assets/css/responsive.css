@@ -224,6 +224,26 @@ For all the  Mobile Devices
     .blog-title {
         max-width: 100%;
     }
+
+    /*----------------------------------------------
+    Blog Page [indivisual]
+    ----------------------------------------------*/
+    section.blog-individual {
+        width: 100%;
+        padding: 20px;
+        margin-top: -12px;
+        gap: 20px;
+    }
+    .blog-individual h1.blog-indivisual-title {
+        font-size: 35px;
+    }
+    .blog-description {
+        font-size: 15px;
+        /* margin: auto 20px; */
+    }
+    .blog-description li::marker {
+        font-size: 17px;
+    }
 }
 
 /*==================================================
@@ -457,6 +477,27 @@ For all the  Tablet Devices
     .blog-title {
         max-width: 100%;
     }
+
+    /*----------------------------------------------
+    Blog Page [indivisual]
+    ----------------------------------------------*/
+    section.blog-individual {
+        width: 100%;
+        padding: 55px;
+        margin-top: -15px;
+        gap: 27.5px;
+    }
+    .blog-individual h1.blog-indivisual-title {
+        font-size: 42px;
+    }
+    .blog-description {
+        font-size: 20px;
+        margin: auto 66.6px;
+        text-align: justify;
+    }
+    .blog-description li::marker{
+        font-size: 30px;
+    }
 }
 
 /*==================================================
@@ -662,4 +703,28 @@ For all the  Desktop Devices
     .blog-title {
         max-width: 600px;
     }
+
+    /*----------------------------------------------
+    Blog Page [indivisual]
+    ----------------------------------------------*/
+    section.blog-individual {
+        width: 70%;
+        padding: 90px;
+        margin-top: -15px;
+        gap: 45px;
+        margin: auto;
+    }
+    .blog-individual h1.blog-indivisual-title {
+        font-size: 52px;
+        /* text-align: center; */
+    }
+    .blog-description {
+        font-size: 25px;
+        margin: auto 100px;
+        text-align: justify;
+    }
+    .blog-description li::marker {
+        font-size: 35px;
+    }
+
 }
