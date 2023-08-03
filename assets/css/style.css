@@ -1016,8 +1016,6 @@ div.red-bg-img {
 .blog {
   flex-direction: column;
   display: flex;
-  gap: 52px;
-  margin: 90px auto;
 }
 .blog a {
   color: inherit;
@@ -1025,30 +1023,20 @@ div.red-bg-img {
 }
 .blog-box-container {
   display: grid;
-  grid-template-areas: "1fr 1fr";
   justify-content: start;
-  gap: 38px;
+  /* gap: 38px; */
   margin: auto;
   width: 749px;
   cursor: pointer;
-  /* max-height: 189px; */
 }
 
-.blog-thumbnail {
-  max-height: 189px;
-  max-width: 342px;
-  /* ***** */
-}
+/* ***** */
 .blog-thumbnail img {
   height: 100%;
   width: 100%;
 }
-.blog-title {
-  max-width: 369px;
-  padding: 0.3em;
-}
+
 .blog-title-text {
-  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%; /* 48px */

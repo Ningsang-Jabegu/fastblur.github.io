@@ -201,6 +201,29 @@ For all the  Mobile Devices
     .footer-org-detail .social-icons .icon {
         gap: 43px;
     }
+
+    /*----------------------------------------------
+    Blog Page
+    ----------------------------------------------*/
+    .blog {
+        gap: 52px;
+        margin: 20px auto 40px auto;
+    }
+    .blog-box-container {
+        grid-template-areas: "1fr";
+        width: calc(100% - 40px);
+        gap: 10px;
+    }
+    .blog-thumbnail {
+        height: auto;
+        width: calc(100vw - 40px);
+    }
+    .blog-title-text {
+        font-size: 23px;
+    }
+    .blog-title {
+        max-width: 100%;
+    }
 }
 
 /*==================================================
@@ -410,6 +433,30 @@ For all the  Tablet Devices
     .footer-org-detail .social-icons .icon {
         gap: 49.82px;
     }
+
+    /*----------------------------------------------
+    Blog Page
+    ----------------------------------------------*/
+    .blog {
+        gap: 52px;
+        padding: 55px;
+    }
+    .blog-box-container {
+        grid-template-areas: "1fr 1fr";
+        width: 100%;
+        gap: 25px;
+    }
+
+    .blog-thumbnail {
+        height: auto;
+        width: 285px;
+    }
+    .blog-title-text {
+        font-size: 30px;
+    }
+    .blog-title {
+        max-width: 100%;
+    }
 }
 
 /*==================================================
@@ -591,5 +638,28 @@ For all the  Desktop Devices
         height: 75vh;
         width: 65vw;
         aspect-ratio: 3/4;
+    }
+
+    /*----------------------------------------------
+    Blog Page
+    ----------------------------------------------*/
+    .blog {
+        gap: 52px;
+        padding: 90px;
+    }
+    .blog-box-container {
+        grid-template-areas: "1fr 1fr";
+        width: 100%;
+        gap: 30px;
+    }
+    .blog-thumbnail {
+        height: auto;
+        width: 342px;
+    }
+    .blog-title-text {
+        font-size: 40px;
+    }
+    .blog-title {
+        max-width: 600px;
     }
 }
