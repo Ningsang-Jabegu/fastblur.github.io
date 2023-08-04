@@ -1,3 +1,5 @@
+/* This file is for navigation bar animation when scrolle down */
+
 const nav = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {

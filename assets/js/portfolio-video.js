@@ -1,3 +1,5 @@
+/* This file is particularly for the portfolio page for the sub-nav (selected) is bold, blue and underline */
+
 const videoContainer = document.querySelector(".r-work-videos");
 const videoContainerAll = document.querySelectorAll(".r-work-videos");
 const all = document.querySelector(".all");

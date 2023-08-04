@@ -1,3 +1,5 @@
+/* This file is for the PORTFOLIO PAGE ONLY to display videos */
+
 /*-----------------------------------------------------------------
 Importing all the video data present in api.js
 -----------------------------------------------------------------*/

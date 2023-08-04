@@ -1,3 +1,5 @@
+/* This file is for the HOMEPAGE ONLY to display videos */
+
 const videoElements = document.querySelectorAll('.r-work-videos .video');
 const displayContainer = document.querySelector('.r-work');
 const addDiv = document.createElement('div');
