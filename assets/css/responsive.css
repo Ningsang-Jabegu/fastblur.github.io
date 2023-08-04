@@ -300,7 +300,6 @@ For all the  Mobile Devices
     }
     .process-row:nth-child(even) .process-img,
     .process-row:nth-child(odd) .process-img {
-        border: 2px solid red;
         width: 100%;
        order: 1;     
     }
