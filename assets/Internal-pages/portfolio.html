@@ -131,33 +131,6 @@ section except favicon, and title
             =================================================================================================================-->
             <div id="fb-root"></div>
 
-            <!-- Your Chat plugin code -->
-            <div id="fb-customer-chat" class="fb-customerchat"></div>
-            <!-- ===============================================================================================================
-            This is the javascript tag for the messenger plugin
-            =================================================================================================================-->
-            <script>
-                var chatbox = document.getElementById('fb-customer-chat');
-                chatbox.setAttribute("page_id", "102684859340338");
-                chatbox.setAttribute("attribution", "biz_inbox");
-
-                // <!-- Your SDK code -->
-                window.fbAsyncInit = function() {
-                    FB.init({
-                    xfbml            : true,
-                    version          : 'v17.0'
-                    });
-                };
-
-                (function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
-                    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-            </script>
-
         <!-- ==================================================================================================================
         Main content of the portfolio page is displayed inside <main>...</main>
         ====================================================================================================================-->
@@ -287,8 +260,7 @@ section except favicon, and title
 
 <script src="/assets/js/nav-animation.js"></script>
 <script src="/assets/js/portfolio-video.js"></script>
-<script src="/assets/js/video-title-generator.js"></script>
-<script src="/assets/js/video-open-close-portfolio.js"></script>
+<script type="module" src="/assets/js/video-open-close-portfolio.js"></script>
 <script src="/assets/js/mobile-navigation.js"></script>
 <script src="/assets/js/script.js"></script>
 </html>
