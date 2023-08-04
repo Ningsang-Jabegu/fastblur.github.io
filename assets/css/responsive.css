@@ -265,6 +265,46 @@ For all the  Mobile Devices
         grid-template-areas: "officials";
     }
     
+    /*----------------------------------------------
+    Process page
+    ----------------------------------------------*/
+    .process {
+        padding:20px 20px 0 20px;
+    }
+    h1.p-work-port {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .process-row {
+        grid-template-areas: "process";
+        margin-left: -20px;
+        padding: 20px 20px 40px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .process-heading {
+        font-size: 25px;
+    }
+    .process-text-detail {
+        font-size: 15px;
+        line-height: 20px;
+        width: 100%;
+    }
+    .process-text {
+        width: calc(100vw - 40px);
+    }
+    .process-row:nth-child(even) .process-text,
+    .process-row:nth-child(odd) .process-text {
+       order: 2; 
+       text-align: justify;
+    }
+    .process-row:nth-child(even) .process-img,
+    .process-row:nth-child(odd) .process-img {
+        border: 2px solid red;
+        width: 100%;
+       order: 1;     
+    }
+    
 }
 
 /*==================================================
@@ -537,6 +577,30 @@ For all the  Tablet Devices
         margin: 55px;
         gap: 55px;
     }
+
+    /*----------------------------------------------
+    Process page
+    ----------------------------------------------*/
+    .process {
+        padding:55px 55px 0 55px;
+    }
+    h1.p-work-port {
+        font-size: 50px;
+        margin-bottom: 55px;
+    }
+    .process-row {
+        grid-template-areas: "process process";
+        margin-left: -55px;
+        padding: 55px;
+        width: calc(100vw - 17px );
+    }
+    .process-heading {
+        font-size: 37.5px;
+    }
+    .process-text-detail {
+        font-size: 20.5px;
+        line-height: 27.29px;
+    }
 }
 
 /*==================================================
@@ -791,5 +855,29 @@ For all the  Desktop Devices
         margin: 90px;
         margin-top: 0;
         gap: 80px;
+    }
+
+    /*----------------------------------------------
+    Process page
+    ----------------------------------------------*/
+    .process {
+        padding: 90px 90px 0 90px;
+    }
+    h1.p-work-port {
+        font-size: 70px;
+        margin-bottom: 90px;
+    }
+    .process-row {
+        grid-template-areas: "process process";
+        margin-left: -90px;
+        padding: 90px;
+        width: calc(100vw - 17px );
+    }
+    .process-heading {
+        font-size: 50px;
+    }
+    .process-text-detail {
+        font-size: 26px;
+        line-height: 34.59px;
     }
 }
