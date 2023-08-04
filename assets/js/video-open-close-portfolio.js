@@ -1,5 +1,3 @@
-/* This file is for the PORTFOLIO PAGE ONLY to display videos */
-
 /*-----------------------------------------------------------------
 Importing all the video data present in api.js
 -----------------------------------------------------------------*/
@@ -62,7 +60,9 @@ If the user clicks on the "More" btn, clickCount will count and 6 videos will be
 If the "More" btn is clicked again, clickCount will be 2, and 9 videos will be shown.
 After that, clickCount is reset to 0 because we do not have any more videos left in api.js.
 -----------------------------------------------------------------*/
+
 moreBtn.addEventListener("click", () => {
+  // moreBtn.style.display = "none";
   clickCount++;
   if (clickCount === 1) {
     videosToShow = 6;
@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
   displayVideos(selectedCategory);
 });
 
+
 /*-----------------------------------------------------------------
 This function will create the divs and add images for the front-end users.
 -----------------------------------------------------------------*/
@@ -115,11 +116,11 @@ const displayVideos = (selectedCategory) => {
       let itemsToShow;
       if (selectedCategory === "all") {
         // If "all" is selected, show 3 videos per category
-        itemsToShow = items.slice(0, 3);
+        itemsToShow = items.slice(0, videosToShow);
       } else {
         // If a particular category is selected, show all 9 videos of that category
         itemsToShow = items;
-        moreBtn.style.display = "none"; // Hide the "More" btn for specific categories
+        // moreBtn.style.display = "none"; // Hide the "More" btn for specific categories
       }
 
       itemsToShow.forEach((item) => {
@@ -151,6 +152,37 @@ const displayVideos = (selectedCategory) => {
     }
   });
 };
+
+/*-----------------------------------------------------------------
+Add click event listeners to the category links
+-----------------------------------------------------------------*/
+const categoryLinksA = document.querySelectorAll(".video-menu a");
+categoryLinksA.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const selectedCategory = link.getAttribute("href").substring(1); // Get the selected category from the href attribute
+
+    // Clear existing videos before re-displaying
+    const rWorkVideos = document.querySelector(".r-work-videos");
+    while (rWorkVideos.firstChild) {
+      rWorkVideos.removeChild(rWorkVideos.firstChild);
+    }
+
+    // Call the function to display the videos for the selected category
+    displayVideos(selectedCategory);
+
+    // If the selected category is not "all", then run hideBtn()
+    if (selectedCategory !== "all") {
+      hideBtn();
+    } else {
+      moreBtn.style.display = "block";
+    }
+  });
+});
+
+const hideBtn = () => {
+    moreBtn.style.display = "none";
+}
 
 /*-----------------------------------------------------------------
 This function will open the videos in a popup.
