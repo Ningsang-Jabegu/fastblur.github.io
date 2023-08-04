@@ -519,23 +519,10 @@ footer .icon a {
   color: inherit;
 }
 
-.testimonial-quote {
+/* .testimonial-quote {
   width: 308px;
   height: 201px;
-}
-
-.quote:nth-child(odd) .testimonial-quote {
-  background: url(/assets/images/background/quote-2.svg);
-}
-
-.quote:nth-child(even) .testimonial-quote {
-  background: url(/assets/images/background/quote-1.svg);
-}
-
-.testimonial-quote img {
-  width: 100%;
-  height: 100%;
-}
+} */
 
 /*sayHello page style*/
 .container {
@@ -790,19 +777,31 @@ h2.process-heading {
 .testimonials {
   width: 100%;
   display: flex;
-  gap: 4em;
+  /* gap: 4em; */
   flex-direction: column;
   justify-content: center;
   position: relative;
 }
 
 .quote {
-  padding: 5em 7em;
-  height: max-content;
+  /* padding: 5em 7em; */
+  /* height: max-content; */
+  display: flex;
   position: relative;
   margin: auto;
 }
+/* .quote:nth-child(odd) .testimonial-quote {
+  background: url(/assets/images/background/quote-2.svg);
+}
 
+.quote:nth-child(even) .testimonial-quote {
+  background: url(/assets/images/background/quote-1.svg);
+} */
+
+.testimonial-quote img {
+  width: 100%;
+  height: 100%;
+}
 .quote:nth-child(odd) .testimonial-info .testimonial-img {
   order: 2;
 }
@@ -817,7 +816,7 @@ h2.process-heading {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 2em;
+  /* gap: 2em; */
 }
 
 div.quote div.testimonial-box p.testimonial-words {
@@ -837,10 +836,10 @@ div.quote div.testimonial-box p.testimonial-words {
 }
 
 .testimonial-img {
-  max-height: 356px;
+  /* max-height: 356px;
   max-width: 356px;
   min-height: 162px;
-  min-width: 162px;
+  min-width: 162px; */
   border-radius: 50%;
   overflow: hidden;
 }
@@ -852,13 +851,14 @@ div.quote div.testimonial-box p.testimonial-words {
 
 h2.testimonial-name {
   line-height: 1.3;
-  margin: 0.4em 0 16px 0;
-  font-size: 60px;
+  /* margin: 0.4em 0 16px 0; */
+  /* font-size: 60px; */
   color: #084bff;
   font-weight: 700;
   line-height: 1.4;
   display: flex;
-  flex-direction: column;
+  /* gap: 10px; */
+  /* flex-direction: column; */
 }
 
 .testimonial-desc {
@@ -868,13 +868,13 @@ h2.testimonial-name {
 p.testimonial-designation {
   font-weight: 600;
   color: #202020;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 div.rating {
   font-size: 15px;
   color: #3e66df;
-  margin: 8px 0 16px 0;
+  /* margin: 0 0 20px 0; */
 }
 
 /*About Us page style*/
