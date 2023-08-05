@@ -381,6 +381,28 @@ For all the  Mobile Devices
     div.rating {
         margin: 0 0 20px 0;
     }
+
+    /*----------------------------------------------
+    Portfolio page
+    ----------------------------------------------*/
+    #portfolio main section.r-work {
+        margin: 0;
+    }
+    #portfolio main section.r-work h1.r-work-port {
+        font-size: 30px;
+    }
+    .video-menu {
+        gap: 12px;
+        margin: 49px 0 21px 0;
+        line-height: 1;
+    }
+    .video-menu a {
+        font-size: 12px;
+    }
+    .more-videos {
+        font-size: 20px;
+        margin: 5px auto 20px;
+    }
 }
 
 /*==================================================
@@ -511,7 +533,7 @@ For all the  Tablet Devices
         font-size: 47.5px;
     }
     .r-work-videos {
-        margin: 25px -55px;
+        margin: 25px -55px 0;
         grid-template-areas: "video video";
     }
     .homepage-join h3 {
@@ -523,6 +545,7 @@ For all the  Tablet Devices
         font-size: 25px;
         font-weight: 500;
         padding: 12.655px 12.5px;
+        margin: 25px auto;
     }
     .r-work-videos .video {
         height: 234px;
@@ -756,6 +779,28 @@ For all the  Tablet Devices
     }
     div.rating {
         margin: 0 0 20px 0;
+    }
+
+    /*----------------------------------------------
+    Portfolio page
+    ----------------------------------------------*/
+    #portfolio main section.r-work {
+        margin: 42.67px 0 10px 0;
+    }
+    #portfolio main section.r-work h1.r-work-port {
+        font-size: 50px;
+    }
+    .video-menu {
+        gap: 14px;
+        margin: 67.5px 0 32.5px 0;
+        line-height: 1;
+    }
+    .video-menu a {
+        font-size: 14px;
+    }
+    .more-videos {
+        font-size: 25px;
+        margin: 40px auto 20px;
     }
 }
 
@@ -1110,4 +1155,24 @@ For all the  Desktop Devices
         margin: 0 0 20px 0;
         /* z-index: 3; */
     }
+
+    /*----------------------------------------------
+    Portfolio page
+    ----------------------------------------------*/
+    #portfolio main section.r-work {
+        margin:  80px 0 0 0;
+    }
+    #portfolio main section.r-work h1.r-work-port {
+        font-size: 70px;
+        max-width: 560px;
+    }
+    .video-menu {
+        gap: 19px;
+        margin: 86px 0 44px 0;
+        line-height: 1;
+    }
+    .video-menu a {
+        font-size: 20px;
+    }
+
 }
