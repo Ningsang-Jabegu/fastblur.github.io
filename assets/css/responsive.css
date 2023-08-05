@@ -403,6 +403,10 @@ For all the  Mobile Devices
         font-size: 20px;
         margin: 5px auto 20px;
     }
+    .video::before {
+        line-height: 18;
+        font-size: 18px;
+    }
 }
 
 /*==================================================
@@ -802,6 +806,10 @@ For all the  Tablet Devices
         font-size: 25px;
         margin: 40px auto 20px;
     }
+    .video::before {
+        line-height: 13.5;
+        font-size: 27px;
+    }
 }
 
 /*==================================================
@@ -1174,5 +1182,8 @@ For all the  Desktop Devices
     .video-menu a {
         font-size: 20px;
     }
-
+    .video::before {
+        line-height: 11.5;
+        font-size: 37px;
+    }
 }

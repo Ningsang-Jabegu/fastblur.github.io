@@ -278,8 +278,6 @@ a.org-text-icon {
   color: var(--font-white);
   z-index: 0;
   font-weight: bolder;
-  font-size: 15pt;
-  line-height: 20;
   background: transparent;
   transition: background 400ms, opacity 600ms;
   background-size: 100% 100%;
