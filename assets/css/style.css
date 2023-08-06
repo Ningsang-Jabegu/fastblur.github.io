@@ -81,7 +81,7 @@ nav ul li.selected::before {
 .nav-btn,
 .nav-btn-mobile {
   color: var(--font-white);
-  height: 50px;
+  /* height: 50px; */
 }
 
 .nav-btn-content {
@@ -224,7 +224,10 @@ a.nav-btn,
 a.nav-logo {
   text-decoration: none;
 }
-
+a.nav-logo {
+  display: flex;
+  align-items: center;
+}
 a.org-text-icon {
   color: inherit;
 }

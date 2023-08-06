@@ -8,29 +8,28 @@ For all the  Mobile Devices
     ----------------------------------------------*/
     nav {
         margin: 13px 0;
-        padding: 10px 20px 0 20px;
+        padding: 10px 20px 10px 20px;
         z-index: 4;
     }
-
+    nav ul li {
+        font-size: 19px;
+    }
     /*----------------------------------------------
     Brand Logo
     ----------------------------------------------*/
     nav .nav-logo img {
-        height: 50px;
-        /* width: 94px; */
+        height: 45px;
     }
 
     /*----------------------------------------------
     For the say hello btn
     ----------------------------------------------*/
-    .nav-btn {
-        width: 113px;
-    }
     .nav-btn .nav-btn-content {
         font-size: 15px;
+        padding: 10px 15px;
     }
     .nav-bar {
-        gap: 22px;
+        gap: 18px;
     }
 
     /*----------------------------------------------
@@ -40,12 +39,14 @@ For all the  Mobile Devices
         display: block;
         cursor: pointer;
     }
-
+    .nav-menu i {
+        font-size: 25px;
+    }
     /*----------------------------------------------
     For navigation items
     ----------------------------------------------*/
     nav.sticky .nav-item {
-        top: 50.4px!important;
+        top: 65px!important;
         background-color: var(--scroll-navigation-background);
     }
     .nav-item {
@@ -57,9 +58,9 @@ For all the  Mobile Devices
         position: absolute;
         height: 100vh;
         width: 100vw;
-        top: 37.4px;
+        top: 70px;
         left: 0;
-        padding: 12px 20px;
+        padding: 20px 40px;
     }
     .nav-item a {
         width: 100%;
@@ -474,11 +475,12 @@ For all the  Tablet Devices
         flex-direction: column;
         gap: 2em;
         background-color: #fff;
+        /* border: 2px solid red; */
         height: 100vh;
         width: 100vw;
-        top: 78px;
+        top: 105px;
         left: 0;
-        padding: 12px 57px;
+        padding: 52px 65px;
     }
     .nav-item a {
         width: 100%;
@@ -487,13 +489,18 @@ For all the  Tablet Devices
         text-align: left;
         font-weight: bold;
     }
-
+    nav ul li {
+        font-size: 30px;
+    }
     /*----------------------------------------------
     Brand Logo
     ----------------------------------------------*/
     nav .nav-logo img {
-        height: 42px;
-        width: 114.5px;
+        height: 65px;
+        /* width: 114.5px; */
+    }
+    .nav-menu i {
+        font-size: 30px;
     }
 
     /*----------------------------------------------
@@ -512,8 +519,12 @@ For all the  Tablet Devices
     /*----------------------------------------------
     For the say hello btn
     ----------------------------------------------*/
-    .nav-btn {
-        width: 165px;
+    .nav-btn .nav-btn-content {
+        font-size: 15px;
+        padding: 12px 35px;
+    }
+    .nav-bar {
+        gap: 53px;
     }
     .nav-btn-mobile {
         display: none;
