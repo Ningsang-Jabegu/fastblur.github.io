@@ -924,10 +924,13 @@ For all the  Desktop Devices
     ----------------------------------------------*/
     .nav-btn {
         cursor: pointer;
-        width: 165px;
+        /* width: 165px; */
     }
     .nav-btn-mobile {
         display: none;
+    }
+    .nav-btn-content {
+        padding: 10px 30px;
     }
     .nav-btn-content:hover {
         background: linear-gradient(-248.59deg, #1d30ad 12.5%, #8d2533 92.57%);
