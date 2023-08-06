@@ -637,7 +637,7 @@ footer .icon a {
   margin-top: 12px;
 }
 
-.right-side .button input[type="button"] {
+.right-side .button input[type="submit"] {
   color: var(--font-white);
   font-size: 18px;
   outline: none;
@@ -649,8 +649,12 @@ footer .icon a {
   transition: all 0.3s ease;
 }
 
-.button input[type="button"]:hover {
-  background: #5029bc;
+.button input[type="submit"]:hover {
+  background: #7C47BB;
+}
+
+.button input[type="submit"]:active {
+  background: #39195f;
 }
 
 /*Portfolio page style*/
