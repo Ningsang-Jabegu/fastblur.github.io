@@ -1,14 +1,27 @@
 /* This file is for navigation bar animation when scrolle down */
 
 const nav = document.querySelector('nav');
+const liOfNav = document.querySelectorAll('.nav-list-item');
+const imgOfNav = document.querySelector('.nav-logo img')
+
 
 window.addEventListener('scroll', () => {
   const scrollPosition = window.scrollY;
 
   if (scrollPosition > 0) {
     nav.classList.add('sticky');
+    nav.style.background = "#0D0630";
+    imgOfNav.src ="/assets/images/Fastblur_Logos/FB Logo_White.png"
+    liOfNav.forEach((item) => {
+      item.style.color = "#fff";
+    });
   } else {
     nav.classList.remove('sticky');
+    nav.style.background = "initial";
+    imgOfNav.src = "/assets/images/Fastblur_Logos/logo-with-color.avif";
+    liOfNav.forEach((item) => {
+      item.style.color = "initial";
+    });
   }
 });
 
