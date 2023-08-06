@@ -407,6 +407,38 @@ For all the  Mobile Devices
         line-height: 18;
         font-size: 18px;
     }
+
+    /*----------------------------------------------
+    Say Hello page
+    ----------------------------------------------*/
+    .container{
+        margin: 40px auto;
+        height: 100%;
+    }
+    .container .content{
+        flex-direction: column-reverse;
+    }
+    .right-side .input-box input,
+    .right-side .input-box textarea,
+    .right-side p,
+    .right-side .button input[type="submit"],
+    .text-one,.text-two {
+        font-size: 15px;
+    }
+     .container .content .left-side{
+       width: 100%;
+       flex-direction: row;
+       margin-top: 40px;
+       justify-content: center;
+       flex-wrap: wrap;
+     }
+     .container .content .left-side::before{
+       display: none;
+     }
+     .container .content .right-side{
+       width: 100%;
+       margin-left: 0;
+     }
 }
 
 /*==================================================
@@ -810,6 +842,38 @@ For all the  Tablet Devices
         line-height: 13.5;
         font-size: 27px;
     }
+
+    /*----------------------------------------------
+    Say Hello page
+    ----------------------------------------------*/
+    .container{
+        margin: 40px auto;
+        height: 100%;
+    }
+    .container .content{
+        flex-direction: column-reverse;
+    }
+    .right-side .input-box input,
+    .right-side .input-box textarea,
+    .right-side p,
+    .right-side .button input[type="submit"],
+    .text-one,.text-two {
+        font-size: 20px;
+    }
+     .container .content .left-side{
+       width: 100%;
+       flex-direction: row;
+       margin-top: 40px;
+       justify-content: center;
+       flex-wrap: wrap;
+     }
+     .container .content .left-side::before{
+       display: none;
+     }
+     .container .content .right-side{
+       width: 100%;
+       margin-left: 0;
+     }
 }
 
 /*==================================================
