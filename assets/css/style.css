@@ -524,7 +524,7 @@ footer .icon a {
 
 /*sayHello page style*/
 .container {
-  width: 85%;
+  /* width: 100%; */
   margin: auto;
   background: var(--primary-background);
   border-radius: 6px;

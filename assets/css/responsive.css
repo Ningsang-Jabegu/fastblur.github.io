@@ -16,15 +16,21 @@ For all the  Mobile Devices
     Brand Logo
     ----------------------------------------------*/
     nav .nav-logo img {
-        height: 34px;
-        width: 94px;
+        height: 50px;
+        /* width: 94px; */
     }
 
     /*----------------------------------------------
     For the say hello btn
     ----------------------------------------------*/
     .nav-btn {
-        display: none;
+        width: 113px;
+    }
+    .nav-btn .nav-btn-content {
+        font-size: 15px;
+    }
+    .nav-bar {
+        gap: 22px;
     }
 
     /*----------------------------------------------
@@ -412,7 +418,8 @@ For all the  Mobile Devices
     Say Hello page
     ----------------------------------------------*/
     .container{
-        margin: 40px auto;
+        margin: 20px;
+        width: calc(100% - 40px);
         height: 100%;
     }
     .container .content{
@@ -847,7 +854,8 @@ For all the  Tablet Devices
     Say Hello page
     ----------------------------------------------*/
     .container{
-        margin: 40px auto;
+        margin: 55px;
+        width: calc(100% - 110px);
         height: 100%;
     }
     .container .content{
@@ -858,7 +866,7 @@ For all the  Tablet Devices
     .right-side p,
     .right-side .button input[type="submit"],
     .text-one,.text-two {
-        font-size: 20px;
+        font-size: 18px;
     }
      .container .content .left-side{
        width: 100%;
@@ -866,14 +874,14 @@ For all the  Tablet Devices
        margin-top: 40px;
        justify-content: center;
        flex-wrap: wrap;
-     }
-     .container .content .left-side::before{
+    }
+    .container .content .left-side::before{
        display: none;
-     }
-     .container .content .right-side{
+    }
+    .container .content .right-side{
        width: 100%;
        margin-left: 0;
-     }
+    }
 }
 
 /*==================================================
@@ -1252,5 +1260,21 @@ For all the  Desktop Devices
     }
     .more-videos {
         margin: 80px auto 58px auto;
+    }
+
+    /*----------------------------------------------
+    Say Hello page
+    ----------------------------------------------*/
+    .container{
+        margin: 90px;
+        width: calc(100% - 180px);
+        height: 100%;
+    }
+    .right-side .input-box input,
+    .right-side .input-box textarea,
+    .right-side p,
+    .right-side .button input[type="submit"],
+    .text-one,.text-two {
+        font-size: 19px;
     }
 }
