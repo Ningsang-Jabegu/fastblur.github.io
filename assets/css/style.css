@@ -122,6 +122,10 @@ main {
   width: 100%;
 }
 
+.org-img video{
+  aspect-ratio: 16/9;
+}
+
 section.org-info {
   display: flex;
   flex-direction: column;
@@ -191,6 +195,7 @@ section .org-text h1 {
 .org-img {
   object-fit: cover;
 }
+
 .org-total-project {
   color: #1e0250;
   font-family: var(--primary-font);
@@ -254,10 +259,11 @@ a.org-text-icon {
   width: 100%;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
   position: relative;
   grid-area: "video";
   overflow: hidden;
+  aspect-ratio: 16/9;
 }
 
 .video img {
@@ -765,9 +771,9 @@ h2.process-heading {
   content: "";
   height: 4px;
   width: 100%;
-  bottom: 0;
+  bottom: -.4em;
   left: 0;
-  background-color: var(--primary-red);
+  background-color: #0d47ff;
 }
 
 .video-hide {
@@ -952,18 +958,18 @@ div.rating {
 .aboutUs {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
 }
 
 .aboutUs-main {
   height: auto;
-  width: 100vw;
+  /* width: 100vw; */
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .aboutUs-main img {
-  height: 100%;
+  height: auto;
   width: 100%;
   object-fit: contain;
 }

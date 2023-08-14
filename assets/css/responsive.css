@@ -1,7 +1,7 @@
 /*==================================================
 For all the  Mobile Devices
 ==================================================*/
-@media (max-width:600px) { /*20px*/
+@media (width <= 600px) { /*20px*/
 
     /*----------------------------------------------
     For Navigation Bar
@@ -98,7 +98,7 @@ For all the  Mobile Devices
     .org-img video{
         border-radius: 20px;
         width: 100%;
-        height: auto;
+        aspect-ratio: 16/9;
     }
     .org-text-icon {
         flex-direction: column;
@@ -143,13 +143,21 @@ For all the  Mobile Devices
         padding: 10px 11px;
     }
     .r-work-videos .video {
-        height: 203px;
+        width: 100%;
+        aspect-ratio: 16/9;
+        /* border: 2px solid red; */
     }
+
     #display-container .display-video iframe {
-        height: 27vh;
-        width: 82.19vw;
-        aspect-ratio: 3/4;
+        width: 100vw;
+        aspect-ratio: 16/9;
+        height: auto;
+        object-fit: cover;
     }
+    .close-button {
+        top: 4em;
+        right: 5.5em;
+      }
     /*----------------------------------------------
     Foooter
     ----------------------------------------------*/
@@ -261,6 +269,7 @@ For all the  Mobile Devices
     }
     .aboutUs-main {
         margin-left: -20px;
+        width: 100vw;
     }
     .aboutUs-text {
         font-size: 15px;
@@ -452,7 +461,7 @@ For all the  Mobile Devices
 /*==================================================
 For all the  Tablet Devices
 ==================================================*/
-@media (max-width:1200px) and (min-width:600px) { /*55px*/
+@media (600px <= width <= 1200px) { /*55px*/
     body {
         overflow: auto;
     }
@@ -605,9 +614,9 @@ For all the  Tablet Devices
         height: 234px;
     }
     #display-container .display-video iframe {
-        height: 47vh;
-        width: 80.5vw;
-        aspect-ratio: 3/4;
+        /* height: 47vh; */
+        width: calc(100vw - 4em);
+        aspect-ratio: 16/9;
     }
 
     /*----------------------------------------------
@@ -721,6 +730,7 @@ For all the  Tablet Devices
     }
     .aboutUs-main {
         margin-left: -55px;
+        /* border: 2px solid red; */
     }
     .aboutUs-text {
         font-size: 15px;
@@ -898,7 +908,7 @@ For all the  Tablet Devices
 /*==================================================
 For all the  Desktop Devices
 ==================================================*/
-@media (min-width:1200px) { /*90px*/
+@media (width >1200px) { /*90px*/
     body {
         overflow: auto;
     }
@@ -998,14 +1008,15 @@ For all the  Desktop Devices
         grid-template-areas: "video video video";
     }
     .homepage-join h3 {
-        font-size: 30px;
-        margin: 0.0625em 0;
+        font-size: 20px;
+        margin: 33px 0 80px 0;
+        max-width: 450px;
         line-height: 120.5%;
     }
     .homepage-join button {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 600;
-        padding: 15.31px 14px;
+        padding: 15.31px 40px;
     }
     .r-work-videos .video {
         height: 270px;
@@ -1074,9 +1085,10 @@ For all the  Desktop Devices
         gap: 56.65px;
     }
     #display-container .display-video iframe {
-        height: 75vh;
-        width: 65vw;
-        aspect-ratio: 3/4;
+        /* height: 75vh; */
+        /* width: calc(100vw - 4em); */
+        width: 100%;
+        aspect-ratio: 16/9;         
     }
 
     /*----------------------------------------------
@@ -1133,14 +1145,17 @@ For all the  Desktop Devices
         padding:0 90px;
         gap: 90px;
         margin-bottom: 50px;
+        width: 100%;
+        /* border: 2px solid red; */
     }
     .aboutUs-text {
         font-size: 20px;
     }
     .aboutUs-main {
-        width: calc(100% + 180px);
+        /* width: calc(100% + 90px);
+         */
+         width: 100vw;
         margin-left: -90px;
-
     }
     /* .aboutUs-personal-box {
         padding: 90px;
