@@ -6,7 +6,7 @@
   --primary-red: #ff5c64;
   --primary-blue: #270063;
   --primary-blue-main: #084bff;
-  --scroll-navigation-background: #d4dae9;
+  --scroll-navigation-background: #0D0630;
   --font-white: #fff;
 }
 
@@ -87,6 +87,7 @@ nav ul li.selected::before {
 .nav-btn-content {
   background: linear-gradient(248.59deg, #2743ff 12.5%, #ff4b62 92.57%);
   border-radius: 10px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -758,7 +759,7 @@ h2.process-heading {
   color: inherit;
   display: inline-block;
   position: relative;
-  /* font-size: 20px; */
+  transition: color 200ms ease-in-out, font-weight 200ms ease-in-out;
 }
 
 .video-menu a.selected {

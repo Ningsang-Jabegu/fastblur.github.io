@@ -62,6 +62,9 @@ For all the  Mobile Devices
         left: 0;
         padding: 20px 40px;
     }
+    #home .nav-btn {
+        display: none;
+    }
     .nav-item a {
         width: 100%;
     }
@@ -99,6 +102,9 @@ For all the  Mobile Devices
         border-radius: 20px;
         width: 100%;
         aspect-ratio: 16/9;
+    }
+    .org-info{
+        margin: 20px 0 15px 0 ;
     }
     .org-text-icon {
         flex-direction: column;
@@ -920,6 +926,19 @@ For all the  Desktop Devices
         margin: 15px 0;
         padding: 14.5px 90px;
     }
+
+    /*----------------------------------------------
+    Hovering into nav items gives the underline
+    ----------------------------------------------*/
+    nav ul li:hover:not(.nav-btn):before,
+    nav ul li:hover:not(.selected):before {
+        content: "";
+        height: 0.2em;
+        width: 100%;
+        position: absolute;
+        bottom: -0.325em;
+        background: var(--primary-red);
+    }
     
     /*----------------------------------------------
     Brand Logo
@@ -1146,6 +1165,7 @@ For all the  Desktop Devices
         gap: 90px;
         margin-bottom: 50px;
         width: 100%;
+        overflow-x: hidden;
         /* border: 2px solid red; */
     }
     .aboutUs-text {
