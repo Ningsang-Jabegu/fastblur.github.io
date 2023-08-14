@@ -122,7 +122,7 @@ For all the  Mobile Devices
         font-size: 23px;
     }
     .org-text-info {
-        margin: 17px 0;
+        margin: 17px 20px;
     }
 
     /*----------------------------------------------
@@ -1017,7 +1017,7 @@ For all the  Desktop Devices
     Videos of landing page
     ----------------------------------------------*/
     .r-work {
-        margin: 83px 0 80px 0;
+        margin: 83px 0 50px 0;
     }
     #home .r-work h1 {
         font-size: 60px;
@@ -1028,7 +1028,7 @@ For all the  Desktop Devices
     }
     .homepage-join h3 {
         font-size: 20px;
-        margin: 33px 0 80px 0;
+        margin: 33px 0 0 0;
         max-width: 450px;
         line-height: 120.5%;
     }
