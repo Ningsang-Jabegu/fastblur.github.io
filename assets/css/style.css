@@ -827,7 +827,7 @@ h2.process-heading {
 } */
 
 .process-row .process-img {
-  height: 22em;
+  height: auto;
   width: 22em;
   object-fit: cover;
 }

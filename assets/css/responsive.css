@@ -303,9 +303,11 @@ For all the  Mobile Devices
         padding: 20px 20px 40px 20px;
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
     .process-heading {
         font-size: 25px;
+        text-align: left;
     }
     .process-text-detail {
         font-size: 15px;
@@ -314,6 +316,10 @@ For all the  Mobile Devices
     }
     .process-text {
         width: calc(100vw - 40px);
+    }
+    .process-row .process-img {
+        height: auto;
+        width: 100%;
     }
     .process-row:nth-child(even) .process-text,
     .process-row:nth-child(odd) .process-text {
@@ -402,6 +408,10 @@ For all the  Mobile Devices
     }
     div.rating {
         margin: 0 0 20px 0;
+    }
+    .org-text-icon {
+        /* border: 2px solid red; */
+        width: 145px;
     }
 
     /*----------------------------------------------
@@ -614,7 +624,7 @@ For all the  Tablet Devices
         font-size: 25px;
         font-weight: 500;
         padding: 12.655px 12.5px;
-        margin: 25px auto;
+        margin: 25px auto 0;
     }
     .r-work-videos .video {
         height: 234px;
@@ -762,6 +772,7 @@ For all the  Tablet Devices
         margin-left: -55px;
         padding: 55px;
         width: calc(100vw - 17px );
+        gap: 31.5px;
     }
     .process-heading {
         font-size: 37.5px;
@@ -1028,7 +1039,7 @@ For all the  Desktop Devices
     }
     .homepage-join h3 {
         font-size: 20px;
-        margin: 33px 0 0 0;
+        /* margin: 33px 0 0 0; */
         max-width: 450px;
         line-height: 120.5%;
     }
@@ -1036,6 +1047,7 @@ For all the  Desktop Devices
         font-size: 20px;
         font-weight: 600;
         padding: 15.31px 40px;
+        margin:  33px auto;
     }
     .r-work-videos .video {
         height: 270px;
@@ -1200,8 +1212,32 @@ For all the  Desktop Devices
     .process-row {
         grid-template-areas: "process process";
         margin-left: -90px;
-        padding: 90px;
+        padding: 63px;
         width: calc(100vw - 17px );
+        max-height: 470px;
+        gap: 71px;
+        justify-content: center;
+    }
+    .process-row .process-text .process-heading{
+        font-size: 47px;
+        line-height: 48.861px;
+    }
+    .process-row .process-text .process-text-detail{
+        font-size: 20px;
+        line-height: 34.592px;
+        max-width: 679px;
+    }
+    .process-row:nth-child(even) .process-text{
+       order: 2; 
+    }
+    .process-row:nth-child(odd) .process-text{
+        order: 1; 
+     }
+    .process-row:nth-child(even) .process-img {
+       order: 1;     
+    }
+    .process-row:nth-child(odd) .process-img {
+       order: 2;     
     }
     .process-heading {
         font-size: 50px;
@@ -1308,7 +1344,7 @@ For all the  Desktop Devices
         font-size: 37px;
     }
     .more-videos {
-        margin: 80px auto 58px auto;
+        margin: 31px auto;
     }
 
     /*----------------------------------------------
