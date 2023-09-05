@@ -131,7 +131,8 @@ For all the  Mobile Devices
     .r-work {
         margin: 66px 0 6px 0;
     }
-    #home .r-work h1 {
+    #home .r-work h1,
+    .trusted-by {
         font-size: 35px;
     }
     .r-work-videos {
@@ -398,7 +399,7 @@ For all the  Mobile Devices
         height: 35px;
     }
     h2.testimonial-name {
-        font-size: 30px;
+        font-size: 25px;
         width: 100%;
         justify-content: center;
         gap: 10px;
@@ -609,7 +610,8 @@ For all the  Tablet Devices
     /*----------------------------------------------
     Videos of landing page
     ----------------------------------------------*/
-    #home .r-work h1 {
+    #home .r-work h1 ,
+    .trusted-by{
         font-size: 47.5px;
     }
     .r-work-videos {
@@ -731,7 +733,7 @@ For all the  Tablet Devices
         font-size: 42px;
     }
     .blog-description {
-        font-size: 20px;
+        font-size: 18px;
         margin: auto 66.6px;
         text-align: justify;
     }
@@ -826,7 +828,7 @@ For all the  Tablet Devices
     .quote:nth-child(even) .testimonial-quote {
         background: url(/assets/images/background/quote-1-small.svg);
         background-repeat: no-repeat;
-        scale: 2.5;
+        scale: 2;
         position: absolute;
         top: 0;
         right: 32%;
@@ -835,7 +837,7 @@ For all the  Tablet Devices
     .quote:nth-child(odd) .testimonial-quote {
         background: url(/assets/images/background/quote-2-small.svg);
         background-repeat: no-repeat;
-        scale: 2.5;
+        scale: 2;
         position: absolute;
         top: 0;
         left: 32%;
@@ -958,7 +960,7 @@ For all the  Desktop Devices
     ----------------------------------------------*/
     nav .nav-logo img {
         height: 50px;
-        width: 135px;
+        /* width: 135px; */
     }
 
     /*----------------------------------------------
@@ -1032,7 +1034,8 @@ For all the  Desktop Devices
     .r-work {
         margin: 83px 0 50px 0;
     }
-    #home .r-work h1 {
+    #home .r-work h1,
+    .trusted-by {
         font-size: 60px;
     }
     .r-work-videos {
@@ -1145,7 +1148,7 @@ For all the  Desktop Devices
         font-size: 40px;
     }
     .blog-title {
-        max-width: 600px;
+        max-width: 760px;
     }
 
     /*----------------------------------------------
@@ -1163,8 +1166,8 @@ For all the  Desktop Devices
         /* text-align: center; */
     }
     .blog-description {
-        font-size: 25px;
-        margin: auto 100px;
+        font-size: 18px;
+        margin: auto 50px 30px 50px;
         text-align: justify;
     }
     .blog-description li::marker {
@@ -1210,6 +1213,8 @@ For all the  Desktop Devices
     h1.p-work-port {
         font-size: 70px;
         margin-bottom: 90px;
+        display: flex;
+        flex-direction: column;
     }
     .process-row {
         grid-template-areas: "process process";
@@ -1253,18 +1258,19 @@ For all the  Desktop Devices
     Testimonial page
     ----------------------------------------------*/
     .testimonials {
-        gap: 76px;
-        padding: 90px;
+        gap: 203px;
+        padding: 90px 90px 60px 90px;
     }
     .testimonials .p-work-port {
         margin-top: 26px;
-        margin-bottom: 0;
+        margin-bottom: -21px;
         font-size: 60px;
-        max-width: 572px;
+        /* max-width: 572px; */
     }
     .quote {
         padding: 0;
         width: 100%;
+        /* border: 2px solid red; */
     }
     .testimonial-info {
         width: calc(100vw - 180px);
@@ -1279,7 +1285,7 @@ For all the  Desktop Devices
     .quote:nth-child(even) .testimonial-quote {
         background: url(/assets/images/background/quote-1.svg);
         background-repeat: no-repeat;
-        scale: .7;
+        scale: 1;
         position: absolute;
         top: 0;
         right: 11%;
@@ -1288,14 +1294,14 @@ For all the  Desktop Devices
     .quote:nth-child(odd) .testimonial-quote {
         background: url(/assets/images/background/quote-2.svg);
         background-repeat: no-repeat;
-        scale: .7;
+        scale: 1;
         position: absolute;
         top: 0;
         left: 11%;
     }
     .testimonial-img {
-        height: 262px;
-        width: 262px;
+        height: 208px;
+        width: 208px;
         border-radius: 50%;
         overflow: hidden;
     }
@@ -1304,13 +1310,13 @@ For all the  Desktop Devices
         height: 201px;
     }
     h2.testimonial-name {
-        font-size: 60px;
+        font-size: 40px;
         width: 100%;
         /* justify-content: center; */
-        margin-top: 20px;
+        /* margin-top: 20px; */
         flex-direction: column;
-        line-height: 1.2;
-        margin: 0.4em 0 16px 0;
+        /* line-height: 1.2; */
+        /* margin: 16px 0; */
     }
     .quote:nth-child(odd) h2.testimonial-name {
         text-align: right;
