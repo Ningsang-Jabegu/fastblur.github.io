@@ -58,7 +58,7 @@ For all the  Mobile Devices
         position: absolute;
         height: 100vh;
         width: 100vw;
-        top: 70px;
+        top: 66px;
         left: 0;
         padding: 20px 40px;
     }
@@ -414,6 +414,10 @@ For all the  Mobile Devices
     .org-text-icon {
         /* border: 2px solid red; */
         width: 145px;
+    }
+    .org-text-icon img {
+        height: 62px;
+        width: 62px;
     }
 
     /*----------------------------------------------

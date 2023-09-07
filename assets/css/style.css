@@ -920,6 +920,7 @@ div.quote div.testimonial-box p.testimonial-words {
 .upwork a.org-text-icon{
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: max-content;
 }
 .upwork a.org-text-icon p {
