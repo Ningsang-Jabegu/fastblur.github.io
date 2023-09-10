@@ -1,7 +1,7 @@
 /*==================================================
 For all the  Mobile Devices
 ==================================================*/
-@media (width <= 600px) { /*20px*/
+@media (max-width:600px) { /*20px*/
     body {
         background: #e6cbcb;
     }
@@ -486,7 +486,7 @@ For all the  Mobile Devices
 /*==================================================
 For all the  Tablet Devices
 ==================================================*/
-@media (600px <= width <= 1200px) { /*55px*/
+@media (min-width:600px) and (max-width:1200px) { /*55px*/
     body {
         overflow: auto;
     }
@@ -936,7 +936,7 @@ For all the  Tablet Devices
 /*==================================================
 For all the  Desktop Devices
 ==================================================*/
-@media (width >1200px) { /*90px*/
+@media (min-width:1200px) { /*90px*/
     body {
         overflow: auto;
     }
