@@ -1,0 +1,440 @@
+body {
+    overflow: auto;
+}
+
+/*----------------------------------------------
+For Navigation Bar
+----------------------------------------------*/
+nav {
+    margin: 15px 0;
+    padding: 14.5px 90px;
+}
+
+/*----------------------------------------------
+Hovering into nav items gives the underline
+----------------------------------------------*/
+nav ul li:hover:not(.nav-btn):before,
+nav ul li:hover:not(.selected):before {
+    content: "";
+    height: 0.2em;
+    width: 100%;
+    position: absolute;
+    bottom: -0.325em;
+    background: var(--primary-red);
+}
+
+/*----------------------------------------------
+Brand Logo
+----------------------------------------------*/
+nav .nav-logo img {
+    height: 50px;
+    /* width: 135px; */
+}
+
+/*----------------------------------------------
+For the say hello btn
+----------------------------------------------*/
+.nav-btn {
+    cursor: pointer;
+    /* width: 165px; */
+}
+.nav-btn-mobile {
+    display: none;
+}
+.nav-btn-content {
+    padding: 10px 30px;
+}
+.nav-btn-content:hover {
+    background: linear-gradient(-248.59deg, #1d30ad 12.5%, #8d2533 92.57%);
+    transition: background 1s ease-in-out;
+    transition-delay: 0.9s;
+}
+
+/*----------------------------------------------
+For Hamburger menu
+----------------------------------------------*/
+.nav-menu {
+    display: none;
+}
+
+/*----------------------------------------------
+Main content of landing page
+----------------------------------------------*/
+main {
+    padding:  0 90px;
+}
+section .org-text h1 {
+    font-size: 50px;
+}
+.org-text-main {
+    font-size: 20px;
+    font-weight: 600;
+}
+.org-text-plus {
+    font-weight: 800;
+    font-size: 45px;
+}
+.org-img video{
+    border-radius: 30px;
+    height: auto;
+    width: 598px;
+}
+.org-info{
+    margin: 40px 0;
+}
+.org-text-info {
+    margin-top: 88px;
+}
+.org-text-icon {
+    gap: 12.75px;
+    font-size: 15px;
+    align-items: center;
+}
+.org-text-icon p{
+    text-align: left;
+}
+.org-total-project {
+    font-size: 40px;
+}
+/*----------------------------------------------
+Videos of landing page
+----------------------------------------------*/
+.r-work {
+    margin: 83px 0 50px 0;
+}
+#home .r-work h1,
+.trusted-by {
+    font-size: 60px;
+}
+.r-work-videos {
+    margin: 25px -90px;
+    grid-template-areas: "video video video";
+}
+.homepage-join h3 {
+    font-size: 20px;
+    /* margin: 33px 0 0 0; */
+    max-width: 450px;
+    line-height: 120.5%;
+}
+.homepage-join button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15.31px 40px;
+    margin:  33px auto;
+}
+.r-work-videos .video {
+    height: 270px;
+}
+
+/*----------------------------------------------
+Foooter
+----------------------------------------------*/
+footer {
+    grid-template-areas: "footer footer";
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 29px 25px 25px 25px;
+    width: 100%;
+}
+.footer-row,
+.footer-left {
+    gap: 25px;
+    justify-content: center;
+}
+.footer-left {
+    width: calc(60vw - 37.5px);;
+}
+.footer-right {
+    width: calc(40vw - 37.5px);
+}
+.footer-img {
+    height: 212.935px;
+}
+.footer-img.foot-img-1 {
+    width:50%;
+}
+  
+.footer-img.foot-img-2 {
+    width:50%;
+}
+  
+.footer-img.foot-img-3 {
+    width: 25%;
+}
+  
+.footer-img.foot-img-4 {
+    width: 75%;
+}
+  
+.footer-img.foot-img-5 {
+    width: 25%;
+}
+.footer-right h3 {
+    font-size: 63.495px;
+    width: 287px;
+}
+.footer-right a.s-hello {
+    padding: 20.27px 61.01px;
+    font-size: 37.35px;
+    font-weight: 700;
+    border: 8.715px solid var(--font-white);
+}
+.footer-org-detail .social-icons .icon i {
+    font-size: 36px;
+}
+.footer-org-detail .social-icons .icon i:hover {
+    color: #f0cc70e4;
+}
+.footer-org-detail .social-icons .icon {
+    gap: 56.65px;
+}
+#display-container .display-video iframe {
+    /* height: 75vh; */
+    /* width: calc(100vw - 4em); */
+    width: 100%;
+    aspect-ratio: 16/9;         
+}
+
+/*----------------------------------------------
+Blog Page
+----------------------------------------------*/
+.blog {
+    gap: 52px;
+    padding: 90px;
+}
+.blog-box-container {
+    grid-template-areas: "1fr 1fr";
+    width: 100%;
+    gap: 30px;
+    margin: 0 80px;
+}
+.blog-thumbnail {
+    height: auto;
+    width: 342px;
+}
+.blog-title-text {
+    font-size: 40px;
+}
+.blog-title {
+    max-width: 760px;
+}
+
+/*----------------------------------------------
+Blog Page [indivisual]
+----------------------------------------------*/
+section.blog-individual {
+    width: 70%;
+    padding:0 90px;
+    margin-top: -15px;
+    gap: 45px;
+    margin: auto;
+}
+.blog-individual h1.blog-indivisual-title {
+    font-size: 52px;
+    /* text-align: center; */
+}
+.blog-description {
+    font-size: 18px;
+    margin: auto 50px 30px 50px;
+    text-align: justify;
+}
+.blog-description li::marker {
+    font-size: 35px;
+}
+
+/*----------------------------------------------
+About Us page
+----------------------------------------------*/
+.aboutUs {
+    padding:0 90px;
+    gap: 90px;
+    margin-bottom: 50px;
+    width: 100%;
+    overflow-x: hidden;
+    /* border: 2px solid red; */
+}
+.aboutUs-text {
+    font-size: 20px;
+}
+.aboutUs-main {
+    /* width: calc(100% + 90px);
+     */
+     width: 100vw;
+    margin-left: -90px;
+}
+/* .aboutUs-personal-box {
+    padding: 90px;
+} */
+.aboutUs-personal-container {
+    grid-template-areas: "officials officials officials";
+    margin: 90px;
+    margin-top: 0;
+    gap: 80px;
+}
+
+/*----------------------------------------------
+Process page
+----------------------------------------------*/
+.process {
+    padding: 90px 90px 0 90px;
+}
+h1.p-work-port {
+    font-size: 70px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+}
+.process-row {
+    grid-template-areas: "process process";
+    margin-left: -90px;
+    padding: 63px;
+    width: calc(100vw - 17px );
+    max-height: 470px;
+    gap: 71px;
+    justify-content: center;
+}
+.process-row .process-text .process-heading{
+    font-size: 47px;
+    line-height: 48.861px;
+}
+.process-row .process-text .process-text-detail{
+    font-size: 20px;
+    line-height: 34.592px;
+    max-width: 679px;
+}
+.process-row:nth-child(even) .process-text{
+   order: 2; 
+}
+.process-row:nth-child(odd) .process-text{
+    order: 1; 
+ }
+.process-row:nth-child(even) .process-img {
+   order: 1;     
+}
+.process-row:nth-child(odd) .process-img {
+   order: 2;     
+}
+.process-heading {
+    font-size: 50px;
+}
+.process-text-detail {
+    font-size: 26px;
+    line-height: 34.59px;
+}
+
+/*----------------------------------------------
+Testimonial page
+----------------------------------------------*/
+.testimonials {
+    gap: 203px;
+    padding: 90px 90px 60px 90px;
+}
+.testimonials .p-work-port {
+    margin-top: 26px;
+    margin-bottom: -21px;
+    font-size: 60px;
+    /* max-width: 572px; */
+}
+.quote {
+    padding: 0;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.testimonial-info {
+    width: calc(100vw - 180px);
+    /* padding: 0 103px; */
+    /* border: 2px solid red; */
+    gap: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.quote:nth-child(even) .testimonial-quote {
+    background: url(/assets/images/background/quote-1.svg);
+    background-repeat: no-repeat;
+    scale: 1;
+    position: absolute;
+    top: 0;
+    right: 11%;
+}
+  
+.quote:nth-child(odd) .testimonial-quote {
+    background: url(/assets/images/background/quote-2.svg);
+    background-repeat: no-repeat;
+    scale: 1;
+    position: absolute;
+    top: 0;
+    left: 11%;
+}
+.testimonial-img {
+    height: 208px;
+    width: 208px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonial-quote {
+    width: 308px;
+    height: 201px;
+}
+h2.testimonial-name {
+    font-size: 40px;
+    width: 100%;
+    /* justify-content: center; */
+    /* margin-top: 20px; */
+    flex-direction: column;
+    /* line-height: 1.2; */
+    /* margin: 16px 0; */
+}
+.quote:nth-child(odd) h2.testimonial-name {
+    text-align: right;
+}
+p.testimonial-designation {
+    font-size: 20px;
+}
+div.rating {
+    margin: 0 0 20px 0;
+    /* z-index: 3; */
+}
+
+/*----------------------------------------------
+Portfolio page
+----------------------------------------------*/
+#portfolio main section.r-work {
+    margin:  80px 0 0 0;
+}
+#portfolio main section.r-work h1.r-work-port {
+    font-size: 70px;
+    max-width: 560px;
+}
+.video-menu {
+    gap: 19px;
+    margin: 86px 0 44px 0;
+    line-height: 1;
+}
+.video-menu a {
+    font-size: 20px;
+}
+.video::before {
+    line-height: 11.5;
+    font-size: 37px;
+}
+.more-videos {
+    margin: 31px auto;
+}
+
+/*----------------------------------------------
+Say Hello page
+----------------------------------------------*/
+.container{
+    margin: 90px;
+    width: calc(100% - 180px);
+    height: 100%;
+}
+.right-side .input-box input,
+.right-side .input-box textarea,
+.right-side p,
+.right-side .button input[type="submit"],
+.text-one,.text-two {
+    font-size: 19px;
+}

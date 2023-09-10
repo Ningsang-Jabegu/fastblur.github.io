@@ -10,6 +10,7 @@ For all the  Mobile Devices
         margin: 13px 0;
         padding: 10px 20px 10px 20px;
         z-index: 4;
+        width: 100%;
     }
     nav ul li {
         font-size: 19px;
