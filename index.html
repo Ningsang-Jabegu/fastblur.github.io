@@ -213,39 +213,6 @@ section except favicon, and title
             <a class=" nav-btn-mobile" href="/assets/Internal-pages/sayHello.html"><span class="nav-btn-content">Say hello</span></a>
 
             <!-- ===============================================================================================================
-            This tag is for the messenger chat box plugin and is given by the meta itself after configuring some settings. 
-            Just like as (https://www.youtube.com/watch?v=uPa9AliaG3E)
-            =================================================================================================================-->
-            <div id="fb-root"></div>
-
-            <!-- Your Chat plugin code -->
-            <div id="fb-customer-chat" class="fb-customerchat"></div>
-            <!-- ===============================================================================================================
-            This is the javascript tag for the messenger plugin
-            =================================================================================================================-->
-            <script>
-                var chatbox = document.getElementById('fb-customer-chat');
-                chatbox.setAttribute("page_id", "102684859340338");
-                chatbox.setAttribute("attribution", "biz_inbox");
-
-                // <!-- Your SDK code -->
-                window.fbAsyncInit = function() {
-                    FB.init({
-                    xfbml            : true,
-                    version          : 'v17.0'
-                    });
-                };
-
-                (function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
-                    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-            </script>
-
-            <!-- ===============================================================================================================
             This section is for video that is available in the index page / landing page and if we want to add or edit the 
             videos of this section then image thumbnail can be changed or edited through the below code and for the video that 
             appears need to be edit/ add through the javascript (which is in the location [/assets/js/video-open-close-home.js])
