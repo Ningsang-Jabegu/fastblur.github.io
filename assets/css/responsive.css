@@ -416,8 +416,8 @@ For all the  Mobile Devices
         width: 145px;
     }
     .org-text-icon img {
-        height: 62px;
-        width: 62px;
+        /* height: 62px; */
+        /* width: auto; */
     }
 
     /*----------------------------------------------
