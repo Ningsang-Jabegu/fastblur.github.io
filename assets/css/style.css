@@ -176,7 +176,7 @@ section .org-text h1 {
 
 .org-text-main {
   display: inline-block;
-  color: #fb476c;
+  color: #B40429;
   font-style: normal;
   max-width: 5.6875em;
   line-height: normal;
@@ -381,7 +381,7 @@ a.org-text-icon {
 }
 
 .homepage-join button {
-  background: #fb476c;
+  background: #B40429;
   color: var(--font-white);
   text-align: center;
   font-family: var(--primary-font);
@@ -402,7 +402,7 @@ a.org-text-icon {
   transition: all 300ms;
 }
 
-.homepage-join h3 {
+.homepage-join h2 {
   color: #0c082d;
   text-align: center;
   font-family: var(--primary-font);
@@ -463,7 +463,7 @@ footer {
   grid-area: "footer";
 }
 
-.footer-right h3 {
+.footer-right h2 {
   color: var(--font-white);
   font-family: var(--primary-font);
   font-style: normal;
