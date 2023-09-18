@@ -98,7 +98,8 @@ For all the  Mobile Devices
         font-weight: 600;
         font-size: 25px;
     }
-    .org-img video{
+    .org-img video,
+    .org-img iframe{
         border-radius: 20px;
         width: 100%;
         aspect-ratio: 16/9;
@@ -593,7 +594,8 @@ For all the  Tablet Devices
         font-weight: 700;
         font-size: 35px;
     }
-    .org-img video{
+    .org-img video,
+    .org-img iframe{
         border-radius: 25px;
         width: calc(50vw - 55px);
         height: auto;
@@ -1010,7 +1012,8 @@ For all the  Desktop Devices
         font-weight: 800;
         font-size: 45px;
     }
-    .org-img video{
+    .org-img video,
+    .org-img iframe{
         border-radius: 30px;
         height: auto;
         width: 598px;

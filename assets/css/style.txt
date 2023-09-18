@@ -13,6 +13,9 @@
 html,
 * {
   scroll-behavior: smooth;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,6 +25,7 @@ body {
   font-family: var(--primary-font);
   position: relative;
   height: -webkit-fill-available;
+
 }
 
 nav {
@@ -31,6 +35,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
+  /* background: var(--primary-background); */
   transition: background-color 0.3s ease;
   width: 100%;
 }
