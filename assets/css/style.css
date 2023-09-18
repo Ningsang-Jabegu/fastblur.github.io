@@ -1159,8 +1159,8 @@ section.blog-individual {
 }
 .blog-title p.blog-title-desc {
   font-size: 15px;
-  /* color: gray; */
-  opacity: .5;
+  color: #595959;
+  /* opacity: .5; */
   /* border: 2px solid red; */
   /* height: 55px; */
   display: -webkit-box;
@@ -1190,7 +1190,7 @@ section.blog-individual {
   opacity: .75;
   font-size: 13px;
 }
-.blog-author-text h3 {
+.blog-author-text h2 {
   opacity: .85;
   font-size: 13px;
 }
