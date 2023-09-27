@@ -172,7 +172,7 @@ section .org-text h1 {
 
 .org-text-main {
   display: inline-block;
-  color: #B40429;
+  color: #fb476c;
   font-style: normal;
   max-width: 5.6875em;
   line-height: normal;
@@ -377,7 +377,7 @@ a.org-text-icon {
 }
 
 .homepage-join button {
-  background: #B40429;
+  background: #fb476c;
   color: var(--font-white);
   text-align: center;
   font-family: var(--primary-font);
