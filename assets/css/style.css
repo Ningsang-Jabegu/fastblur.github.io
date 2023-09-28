@@ -1263,13 +1263,8 @@ section.blog-individual {
   height: auto;
 }
 .inner_404 {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%); */
-  /* border: 2px solid blue; */
-  height: 300px;
-  /* width: 300px; */
+  /* border: 2px solid red; */
+  margin-bottom: 40px;
 }
 .inner_404_code {
   color: transparent;
@@ -1295,6 +1290,7 @@ section.blog-individual {
   cursor: pointer;
   background: transparent;
   transition: all 300ms ease-in-out;
+  margin: 9px;
 }
 .inner_404_button:hover {
   background: #28006342;
