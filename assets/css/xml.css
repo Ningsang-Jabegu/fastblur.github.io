@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Poppins:wght@400;600;700;800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+url{
+    display: block;
+    align-items: center;
+    gap: 5px;
+    /* border: 2px solid blue; */
+    padding: 10px 20px;
+}
+loc {
+    color: #270063;
+    font-weight: bold;
+}
+url::before {
+    content: "URL : ";
+}
+lastmod::before {
+    content: "Last Modified on : ";
+    font-weight: normal
+}
+priority::before {
+    content: "Priority : ";
+    font-weight: normal
+}
+lastmod, priority {
+    display: block;
+    color: #29223E;
+    font-weight: bold;
+}

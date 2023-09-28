@@ -1244,3 +1244,67 @@ section.blog-individual {
   display: flex;
   flex-direction: column;
 } */
+
+/*404 page*/
+.container_404 {
+  height: 100%;
+  /* margin: 8em auto; */
+  width: auto;
+  /* border: 2px solid red; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container_404 img {
+  width: 15em;
+  height: auto;
+}
+.inner_404 {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+  /* border: 2px solid blue; */
+  height: 300px;
+  /* width: 300px; */
+}
+.inner_404_code {
+  color: transparent;
+  font-size: 80pt;
+  -webkit-text-stroke: 2px #FF5C64;
+  line-height: .9;
+}
+.inner_404_meaning {
+  color: #270063;
+  font-size: 51.747px;
+  line-height: 1;
+  /* -webkit-text-stroke: .5px #FF5C64; */
+}
+.inner_404_description {
+  font-size: 12pt;
+  margin: 20px;
+}
+.inner_404_button {
+  padding: 10px 20px;
+  border: 2px solid #270063;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  transition: all 300ms ease-in-out;
+}
+.inner_404_button:hover {
+  background: #28006342;
+}
+.sitemap_xml {
+  width: 100%;
+  height: 1000px;
+  /* border: 2px solid red; */
+  margin-bottom: 20px;
+}
+/* #sitemap .container_404 img {
+  border-right: 2px solid blue;
+} */
