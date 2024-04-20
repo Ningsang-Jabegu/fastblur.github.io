@@ -1260,18 +1260,21 @@ section.blog-individual {
   margin-left:1rem;
   
 }
-.blog-desc-content {
+.sub-list-topic {
+  margin-left: 1.5rem;
+}
+.blog-desc-content, div.sub-target:target li  {
   padding: 1rem;
 }
-.blog-desc:target {
+.blog-desc:target,div.sub-target:target{
   padding-top: 7rem;
   
 }
-.blog-desc:target .blog-desc-content {
+.blog-desc:target .blog-desc-content,
+div.sub-target:target li {
   border-radius: 1rem;
   background-color: #7754a021;
 }
-
 .blog-indivisual-title {
   line-height: 1;
   color: var(--primary-blue);
