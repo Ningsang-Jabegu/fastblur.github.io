@@ -413,7 +413,7 @@ a.org-text-icon {
 .clients {
   width: 100%;
   height: auto;
-  margin-bottom: -7px;
+  margin-bottom: -8px;
 }
 
 .clients img {
@@ -1130,9 +1130,9 @@ section.blog-individual {
   justify-content: center;
   align-items: center;
   /* font-size: 25px; */
-  line-height: 1.3;
+  line-height: 2;
   font-weight: 400;
-  gap: 1em;
+  /* gap: 1em; */
   /* margin-bottom: 20px; */
   /* text-align: justify; */
 }
@@ -1150,7 +1150,7 @@ section.blog-individual {
 .blog-sub-heading {
   display: block;
   font-size: 29px;
-  margin: 17px 0 5px 0;
+  margin: 0 0 5px 0;
   width: 100%;
   /* display: inline-block; */
   text-align: left;
@@ -1200,16 +1200,78 @@ section.blog-individual {
   border-radius: 50%;
 }
 .individual-blog-thumbnail {
-  width: auto;
-  max-height: 500px;
-  aspect-ratio: 16 / 9;
+  width: 50%;
+  /* max-height: 500px; */
+  /* aspect-ratio: 16 / 9; */
 }
 .blog-head {
   /* border: 2px solid green; */
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 10px;
 }
+.blog-body {
+  /* display: flex; */
+  /* position: relative; */
+  overflow: auto;
+  width: calc(100vw - 20vw);
+}
+.blog-topic-cluster {
+  width: 28%;
+  float: left;
+  margin-right: 2rem;
+  /* border: 2px solid red; */
+}
+.blog-topic-cluster h3 {
+  margin: 1rem;
+  color: #270063;
+  font-weight: 600;
+}
+.blog-description {
+  margin: 0 8rem;
+}
+.blog-head-recent {
+  /* border: 2px solid red; */
+  display: flex;
+}
+.blog-top-recent {
+  margin: auto;
+}
+.a-of-blog {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  transition: color 150ms ease-in-out;
+  /* border: 2px solid red; */
+  width: auto;
+  border-bottom: 2px solid rgb(224, 224, 224);
+  /* height: 150px; */
+  /* padding-left: 1rem; */
+}
+.a-of-blog:hover {
+  color: #7854A0;
+}
+/* :target {
+  padding-top: 5rem;
+  background-color: #7754a021;
+} */
+.li-of-blog {
+  padding: .5rem;
+  margin-left:1rem;
+  
+}
+.blog-desc-content {
+  padding: 1rem;
+}
+.blog-desc:target {
+  padding-top: 7rem;
+  
+}
+.blog-desc:target .blog-desc-content {
+  border-radius: 1rem;
+  background-color: #7754a021;
+}
+
 .blog-indivisual-title {
   line-height: 1;
   color: var(--primary-blue);
@@ -1223,6 +1285,8 @@ section.blog-individual {
   /* flex-direction: column; */
   gap: 25px;
   margin-top: 25px;
+  /* border: 2px solid red;
+  display:block; */
 }
 .blog-socials-indivisual {
   display: flex;
