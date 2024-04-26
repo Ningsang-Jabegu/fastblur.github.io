@@ -1403,4 +1403,10 @@ For all the  Desktop Devices
     .text-one,.text-two {
         font-size: 19px;
     }
+
+    .faq-body {
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+    }
 }
