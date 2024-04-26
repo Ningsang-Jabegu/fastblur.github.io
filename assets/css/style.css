@@ -1181,6 +1181,10 @@ section.blog-individual {
   align-items: center;
   gap: 10px;
 }
+.blog-individual h1.blog-indivisual-title {
+  font-size: clamp(45px, 1vw, 52px);
+  /* text-align: center; */
+}
 .blog-author-text {
   display: flex;
   flex-direction: column;

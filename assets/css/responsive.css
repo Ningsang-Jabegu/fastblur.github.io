@@ -254,18 +254,38 @@ For all the  Mobile Devices
     section.blog-individual {
         width: 100%;
         padding: 20px;
-        margin-top: -12px;
+        /* margin-top: -12px; */
         gap: 20px;
+        margin: auto;
+    }
+    .blog-body {
+        width: 100%;
     }
     .blog-individual h1.blog-indivisual-title {
         font-size: 35px;
     }
+    .individual-blog-thumbnail {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+    .blog-head {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .blog-top-recent {
+        margin: 0 1rem;
+    }
     .blog-description {
         font-size: 15px;
-        /* margin: auto 20px; */
+        margin: auto 0;
+        width: 100%;
+        /* border: 2px solid red; */
     }
     .blog-description li::marker {
         font-size: 17px;
+    }
+    .blog-topic-cluster {
+        display: none;
     }
     /*----------------------------------------------
     About Us page
@@ -709,6 +729,11 @@ For all the  Tablet Devices
         gap: 52px;
         padding: 55px;
     }
+    .blog-body {
+        width: 100%;
+        /* border: 2px solid red; */
+
+    }
     .blog-box-container {
         grid-template-areas: "1fr 1fr";
         width: 100%;
@@ -740,7 +765,7 @@ For all the  Tablet Devices
     }
     .blog-description {
         font-size: 18px;
-        margin: auto 66.6px;
+        margin: auto 0;
         text-align: justify;
     }
     .blog-description li::marker{
@@ -1169,13 +1194,13 @@ For all the  Desktop Devices
         margin: auto;
         /* border: 2px solid red; */
     }
-    .blog-individual h1.blog-indivisual-title {
+    /* .blog-individual h1.blog-indivisual-title {
         font-size: 52px;
-        /* text-align: center; */
-    }
+        text-align: center; 
+    } */
     .blog-description {
         font-size: 18px;
-        margin: auto 50px 30px 50px;
+        margin: auto 0;
         text-align: justify;
     }
     .blog-description li::marker {
