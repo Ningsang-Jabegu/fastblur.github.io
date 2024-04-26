@@ -148,7 +148,7 @@ const categories = {
           src: "https://www.youtube.com/embed/o7N3vcRR7u0?autoplay=1&Samesite=None" 
         },
         {
-          name: "Pahtomath", 
+          name: "Pantomath", 
           img: "/assets/images/video_thumbnails/Portfolio/Isometric/video-2.svg",
           src: "https://www.youtube.com/embed/s3O29tDBYUM?autoplay=1&Samesite=None" 
         },
